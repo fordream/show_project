@@ -1,0 +1,50 @@
+
+#charts {
+    margin: 20px auto 10px auto;
+}
+
+#graph_area {
+    border: 1px solid #bcbcbc;
+    border-radius: 4px;
+}
+
+.chart {
+    margin-top: 50px;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 1s;
+    /*-webkit-animation-iteration-count: infinite;*/
+}
+
+.chart:first-child {
+    margin-top: 0;
+}
+
+.graphs {
+    width: 100%;
+    height: auto;
+    margin: 10px ;
+}
+
+.graph {
+    width: 25%;
+    height: 70px;
+    background-color: #808080;
+    margin: 10px 5px;
+    float: left;
+}
+
+.graph:hover {
+    cursor: pointer;
+}
+
+
+.g_container {
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    margin: 20px -15px;
+}
+
+.g_container h2 {
+    margin: 10px 10px;
+    font-size: 1.2em;
+}

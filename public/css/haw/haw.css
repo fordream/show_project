@@ -1,0 +1,51 @@
+
+
+.line-input {
+    margin: 5px;
+}
+
+.line-input label {
+    width: 15%;
+}
+
+.line-input input {
+    width: 80%;
+    display: inline-block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.item-container {
+    margin-top: 30px;
+    background-color: #f3f3f3;
+    border: 1px solid #bcbcbc;
+    border-radius: 4px;
+}
+
+.graph-list {
+
+}
+
+.graph-list p {
+    margin: 20px 0 15px 20px;
+    font-size: 20px;
+}
+
+.graphs {
+    margin-left: 10px;
+}
+
+.graph-item {
+    width: 25%;
+    height: 100px;
+    float: left;
+    margin: 10px 10px;
+    background-color: #d0d0d0;
+    text-align: center;
+}
+
+.graph-item:hover {
+    cursor: pointer;
+}
