@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="<?php echo base_url(); ?>" />
 
-    <title><?php echo $title ?> -- E-CORP企业智慧化平台</title>
+    <title><?php echo $title ?> </title>
 
     <link href="<?php echo base_url().CSS_DIR; ?>/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url().PUB_DIR; ?>/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -19,53 +19,38 @@
 
 <body class="gray-bg">
 
-<div class="loginColumns animated fadeInDown">
-    <div class="row">
+<div class="middle-box text-center loginscreen  animated fadeInDown">
+    <div>
+        <div>
 
-        <div class="col-md-7">
-            <h2 class="font-bold">欢迎来到E-CORP企业智慧化平台</h2>
-            <br>
-            <p class="lh24">
-                E-CORP企业智慧化平台，是商业数据价值领域的探索者和开创者。由国内首家数据战略咨询公司发起，熔铸长达8年近万次企业决策支持经验。平台集成强大的企业业务深度咨询和大数据技术能力，涵盖数据仓库、决策智能定制，专家系统集成，业务流程管理四大产品和服务。一对一助力企业实现智慧化全面升级。
-            </p>
+            <h1 class="logo-name">IN+</h1>
 
         </div>
-        <div class="col-md-5">
-            <div class="ibox-content">
-                <form class="m-t" role="form" action="login/validate" method="post">
-                    <div class="form-group">
-                        <input type="username" name="username" class="form-control" placeholder="用户名" required="">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" name="password" class="form-control" placeholder="密码" required="">
-                    </div>
-                    <button type="submit" class="btn btn-primary block full-width m-b">登录</button>
-
-                    <a href="#">
-                        <small>忘记密码?</small>
-                    </a>
-
-                    <p class="text-muted text-center">
-                        <small>没有账户？</small>
-                    </p>
-                    <a class="btn btn-sm btn-white btn-block" href="login/register">创建新账户</a>
-                </form>
-<!--                <p class="m-t">-->
-<!--                    <small>Inspinia we app framework base on Bootstrap 3 &copy; 2014</small>-->
-<!--                </p>-->
+        <h3>Welcome to IN+</h3>
+        <p>Perfectly designed and precisely prepared admin theme with over 50 pages with extra new web app views.
+            <!--Continually expanded and constantly improved Inspinia Admin Them (IN+)-->
+        </p>
+        <p>Login in. To see it in action.</p>
+        <form class="m-t" role="form" action="login/validate" method="post">
+            <div class="form-group">
+                <input type="username" name="username" class="form-control" placeholder="Username" required="">
             </div>
-        </div>
-    </div>
-    <hr/>
-    <div class="row">
-        <div class="col-md-6">
-            &copy; 2015&nbsp;&nbsp;杭州追灿科技有限公司
-        </div>
-        <div class="col-md-6 text-right">
-            <small>e-corp.cn </small>
-        </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Password" required="">
+            </div>
+            <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
+
+            <a href="#"><small>Forgot password?</small></a>
+            <p class="text-muted text-center"><small>Do not have an account?</small></p>
+            <a class="btn btn-sm btn-white btn-block" href="login/register">Create an account</a>
+        </form>
+        <p class="m-t"> <small>Inspinia we app framework base on Bootstrap 3 &copy; 2014</small> </p>
     </div>
 </div>
+
+<!-- Mainly scripts -->
+<script src="<?php echo base_url().JS_DIR;?>/jquery-2.1.1.js"></script>
+<script src="<?php echo base_url().JS_DIR;?>/bootstrap.min.js"></script>
 
 </body>
 

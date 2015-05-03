@@ -21,9 +21,9 @@
 <div class="middle-box text-center loginscreen   animated fadeInDown">
     <div>
         <div>
-            <h1 class="logo-name">E+</h1>
+            <h1 class="logo-name">N+</h1>
         </div>
-        <h3>欢迎加入E-CORP企业智慧化平台</h3>
+        <h3>欢迎加入毕业设计作品展示平台</h3>
         <form class="m-t" role="form" action="reg_success" method="post">
             <div class="form-group">
                 <input type="text" name = "username" class="form-control" placeholder="用户名" required="">
@@ -56,7 +56,7 @@
             <p class="text-muted text-center"><small>已经拥有账号?</small></p>
             <a class="btn btn-sm btn-white btn-block" href="login/index">登陆</a>
         </form>
-        <p class="m-t"> <small>Copyright e-corp
+        <p class="m-t"> <small>Copyright t-uvw.xyz
                 © 2010-2015</small> </p>
     </div>
 </div>

@@ -82,7 +82,7 @@ class Login extends CI_Controller
      *  @$page='logout' : 退出跳转页面
      */
     public function logout($page = 'logout') {
-        if (!file_exists("application/views/login/$page.php")) {
+        if (!file_exists('application/views/login/'.$page.'.php')) {
             show_404();
         }
 
@@ -94,7 +94,7 @@ class Login extends CI_Controller
 
         $this->session->sess_destroy();
 
-        $this->load->view("login/$page", $data);
+        $this->load->view("login/".$page, $data);
     }
 
     /*
@@ -198,8 +198,13 @@ class Login extends CI_Controller
 
             //插入日志文件
             $this->mlogin->insert_log_message($username, "login", $this->input->ip_address());
+            if($username == 'admin') {
+                redirect('home/index');
+            } else {
+                redirect('homepage/index');
+            }
 
-            redirect('home/index');
+
         }
     }
 }

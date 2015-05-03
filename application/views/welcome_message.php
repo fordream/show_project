@@ -63,17 +63,17 @@
 		<div class="item active">
 			<div class="container">
 				<div class="carousel-caption">
-					<h1>一站式解决方案提供商<br/>
-						企业智慧化转型管理咨询及技术提供</h1>
-					<p>Integrated Intelligent Solution for business revolution.</p>
-					<p>
-						<a class="btn btn-lg btn-primary" href="login" role="button">申请试用</a>
-<!--						<a class="caption-link" href="#" role="button">Inspinia Theme</a>-->
-					</p>
+<!--					<h1>一站式解决方案提供商<br/>-->
+<!--						企业智慧化转型管理咨询及技术提供</h1>-->
+<!--					<p>Integrated Intelligent Solution for business revolution.</p>-->
+<!--					<p>-->
+<!--						<a class="btn btn-lg btn-primary" href="login" role="button">申请试用</a>-->
+<!--<!--						<a class="caption-link" href="#" role="button">Inspinia Theme</a>-->
+<!--					</p>-->
 				</div>
-				<div class="carousel-image wow zoomIn">
-					<img src="public/images/laptop.png" alt="laptop"/>
-				</div>
+<!--				<div class="carousel-image wow zoomIn">-->
+<!--					<img src="public/images/laptop.png" alt="laptop"/>-->
+<!--				</div>-->
 			</div>
 			<!-- Set background for slide in css -->
 			<div class="header-back one"></div>
@@ -82,10 +82,10 @@
 		<div class="item">
 			<div class="container">
 				<div class="carousel-caption blank">
-					<h1>E-CORP企业智慧化平台<br />
-						商业数据价值领域的探索者和开创者</h1>
-					<p>Bringing an intelligent future for business.</p>
-					<p><a class="btn btn-lg btn-primary" href="login" role="button">申请试用</a></p>
+<!--					<h1>E-CORP企业智慧化平台<br />-->
+<!--						商业数据价值领域的探索者和开创者</h1>-->
+<!--					<p>Bringing an intelligent future for business.</p>-->
+<!--					<p><a class="btn btn-lg btn-primary" href="login" role="button">申请试用</a></p>-->
 				</div>
 			</div>
 			<!-- Set background for slide in css -->

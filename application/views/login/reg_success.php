@@ -20,7 +20,7 @@
 
 
 <div class="middle-box text-center animated fadeInDown">
-    <h1>E+</h1>
+    <h1>N+</h1>
     <h3 class="font-bold">成功提交申请！</h3>
     <div class="error-desc">
         <?php echo $username;?>,您已成功加入追灿市场营销智慧化平台！页面正太跳转,请稍等...<br/>
