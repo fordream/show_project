@@ -43,4 +43,20 @@ class Homepage extends CI_Controller
         $this->load->view('homepage/footer_function_add');
         $this->load->view('templates/task_footer_final');
     }
+
+    public function logout($page = 'logout') {
+        if (!file_exists('application/views/homepage/'.$page.'.php')) {
+            show_404();
+        }
+
+        $data['title'] = "注销登录";
+
+        $this->load->model("mhomepage");
+        //插入日志文件
+        $this->mhomepage->insert_log_message($this->session->userdata('username'), "logout", $this->input->ip_address());
+
+        $this->session->sess_destroy();
+
+        $this->load->view("homepage/".$page, $data);
+    }
 }

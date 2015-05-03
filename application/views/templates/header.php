@@ -65,7 +65,7 @@
                         </li>
 
                         <li>
-                            <a href="login/logout">
+                            <a href="homepage/logout">
                                 <i class="fa fa-sign-out"></i> 退出系统
                             </a>
                         </li>

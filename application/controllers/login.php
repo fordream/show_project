@@ -78,26 +78,6 @@ class Login extends CI_Controller
     }
 
     /*
-     *  logout : 用户退出
-     *  @$page='logout' : 退出跳转页面
-     */
-    public function logout($page = 'logout') {
-        if (!file_exists('application/views/login/'.$page.'.php')) {
-            show_404();
-        }
-
-        $data['title'] = "注销登录";
-
-        $this->load->model("mlogin");
-        //插入日志文件
-        $this->mlogin->insert_log_message($this->session->userdata('username'), "logout", $this->input->ip_address());
-
-        $this->session->sess_destroy();
-
-        $this->load->view("login/".$page, $data);
-    }
-
-    /*
      * get_captcha : 生成验证码函数
      * @param : null
      * @return : $cap['image'] - 生成的验证码图像代码
