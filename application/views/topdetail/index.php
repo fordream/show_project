@@ -374,6 +374,7 @@
                     <li><a href=""><i class="fa fa-tag"></i> Passages</a></li>
                     <li><a href=""><i class="fa fa-tag"></i> Variations</a></li>
                 </ul>
+
                 <h5>Project files</h5>
                 <ul class="list-unstyled project-files">
                     <li><a href=""><i class="fa fa-file"></i> Project_document.docx</a></li>

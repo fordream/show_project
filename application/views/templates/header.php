@@ -23,12 +23,12 @@
     <link href="<?php echo base_url() . CSS_DIR; ?>/graph/first.css" rel="stylesheet" type="text/css" />
 <body class="gray-bg boxed-layout">
 
-<div class="passwordBox animated fadeInDown" style="margin-left: 19%;margin-right: 19%">
+<div class="passwordBox animated fadeInDown" style="margin-left: 25%;margin-right: 25%">
     <div class="row">
 
         <div class="col-md-12">
 
-            <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+            <nav class="navbar navbar-static-top gray-bg" role="navigation" style="margin-bottom: 0">
                 <div class="navbar-header">
                     <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="javascript:;"><i class="fa fa-bars"></i> </a>
                     <form role="search" class="navbar-form-custom" method="post" action="search_results.html">
