@@ -26,7 +26,7 @@
             <h1 class="logo-name">IN+</h1>
 
         </div>
-        <h3>欢迎！</h3>
+        <h3>欢迎您！</h3>
         <p> 这里是毕业设计作品展示平台
             <!--Continually expanded and constantly improved Inspinia Admin Them (IN+)-->
         </p>
