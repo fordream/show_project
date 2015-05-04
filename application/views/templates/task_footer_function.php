@@ -7,7 +7,7 @@
                 showMethod: 'slideDown',
                 timeOut: 4000
             };
-            toastr.success('show@project.com', '欢迎来到毕业设计作品展示平台');
+            toastr.success('www.t-uvw.xyz @ 2015', '欢迎来到毕业设计作品展示平台');
 
         }, 1300);
 
