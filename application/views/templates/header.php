@@ -30,12 +30,12 @@
 
             <nav class="navbar navbar-static-top gray-bg" role="navigation" style="margin-bottom: 0">
                 <div class="navbar-header">
-                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="javascript:;"><i class="fa fa-bars"></i> </a>
-                    <form role="search" class="navbar-form-custom" method="post" action="search_results.html">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="homepage/index"><i class="fa fa-rss"></i> </a>
+                    <div class="navbar-form-custom">
                         <div class="form-group">
-                            <input type="text" placeholder="毕业设计作品展示平台" class="form-control" name="top-search" id="top-search">
+                            <button type="text" class="form-control" >毕业设计作品展示平台</button>
                         </div>
-                    </form>
+                    </div>
                 </div>
                 <?php
                 if(!array_key_exists('logged_in', $this->session->all_userdata())) { ?>
