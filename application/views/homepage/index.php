@@ -31,8 +31,7 @@
                                                     <div class="file-name">
                                                         Italy street.jpg
                                                         <br/>
-                                                        <small>Added: Jan 6, 2014</small> &nbsp;
-                                                        <span class="label label-danger"> hot </span>
+                                                        <small>Added: Jan 6, 2014</small>
                                                     </div>
                                                 </a>
                                             </div>
@@ -48,8 +47,7 @@
                                                     <div class="file-name">
                                                         My feel.png
                                                         <br/>
-                                                        <small>Added: Jan 7, 2014</small> &nbsp;
-                                                        <span class="label label-warning"> hot </span>
+                                                        <small>Added: Jan 7, 2014</small>
                                                     </div>
                                                 </a>
                                             </div>
@@ -65,8 +63,7 @@
                                                     <div class="file-name">
                                                         Document_2014.doc
                                                         <br/>
-                                                        <small>Added: Fab 11, 2014</small> &nbsp;
-                                                        <span class="label label-success"> hot </span>
+                                                        <small>Added: Fab 11, 2014</small>
                                                     </div>
                                                 </a>
                                             </div>
@@ -82,8 +79,7 @@
                                                     <div class="file-name">
                                                         Monica's birthday.mpg4
                                                         <br/>
-                                                        <small>Added: Fab 18, 2014</small> &nbsp;
-                                                        <span class="label label-primary"> hot </span>
+                                                        <small>Added: Fab 18, 2014</small>
                                                     </div>
                                                 </a>
                                             </div>
@@ -104,8 +100,7 @@
                                                     <div class="file-name">
                                                         Annual report 2014.xls
                                                         <br/>
-                                                        <small>Added: Fab 22, 2014</small> &nbsp;
-                                                        <span class="label label-primary"> hot </span>
+                                                        <small>Added: Fab 22, 2014</small>
                                                     </div>
                                                 </div>
                                             </a>
@@ -121,8 +116,7 @@
                                                     <div class="file-name">
                                                         Document_2014.doc
                                                         <br/>
-                                                        <small>Added: Jan 11, 2014</small> &nbsp;
-                                                        <span class="label label-primary"> hot </span>
+                                                        <small>Added: Jan 11, 2014</small>
                                                     </div>
                                                 </a>
                                             </div>
@@ -139,8 +133,7 @@
                                                     <div class="file-name">
                                                         Italy street.jpg
                                                         <br/>
-                                                        <small>Added: Jan 6, 2014</small> &nbsp;
-                                                        <span class="label label-primary"> hot </span>
+                                                        <small>Added: Jan 6, 2014</small>
                                                     </div>
                                                 </a>
 
@@ -157,8 +150,7 @@
                                                     <div class="file-name">
                                                         My feel.png
                                                         <br/>
-                                                        <small>Added: Jan 7, 2014</small> &nbsp;
-                                                        <span class="label label-primary"> hot </span>
+                                                        <small>Added: Jan 7, 2014</small>
                                                     </div>
                                                 </a>
                                             </div>
