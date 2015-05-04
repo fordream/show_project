@@ -57,7 +57,7 @@
             <a class="btn btn-sm btn-white btn-block" href="login/index">登陆</a>
         </form>
         <p class="m-t"> <small>Copyright t-uvw.xyz
-                © 2010-2015</small> </p>
+                © 2015</small> </p>
     </div>
 </div>
 

@@ -16,7 +16,7 @@
                     <div id="tab-1" class="tab-pane active">
                         <div class="ibox ">
                             <div class="ibox-title">
-                                <h5>本期优秀作品</h5>
+                                <h5>本期优秀作品</h5> <span class="label label-primary">Hot</span>
                             </div>
                             <div class="ibox-content">
                                 <div class="row">
@@ -457,10 +457,141 @@
 
                         <div class="ibox ">
                             <div class="ibox-title">
-                                <h5>板块4--待定</h5>
+                                <h5>友情链接</h5>
                             </div>
                             <div class="ibox-content">
-                                something...
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div>
+                                            <ul class="list-group clear-list m-t">
+                                                <a href="#">
+                                                    <li class="list-group-item fist-item">
+                                                        Please contact me
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li class="list-group-item">
+                                                        Sign a contract
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li class="list-group-item">
+                                                        Open new shop
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li class="list-group-item">
+                                                        Call back to Sylvia
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li class="list-group-item">
+                                                        Write a letter to Sandra
+                                                    </li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div>
+                                            <ul class="list-group clear-list m-t">
+                                                <a href="#">
+                                                    <li class="list-group-item fist-item">
+                                                        Please contact me
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li class="list-group-item">
+                                                        Sign a contract
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li class="list-group-item">
+                                                        Open new shop
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li class="list-group-item">
+                                                        Call back to Sylvia
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li class="list-group-item">
+                                                        Write a letter to Sandra
+                                                    </li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div>
+                                            <ul class="list-group clear-list m-t">
+                                                <a href="#">
+                                                    <li class="list-group-item fist-item">
+                                                        Please contact me
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li class="list-group-item">
+                                                        Sign a contract
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li class="list-group-item">
+                                                        Open new shop
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li class="list-group-item">
+                                                        Call back to Sylvia
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li class="list-group-item">
+                                                        Write a letter to Sandra
+                                                    </li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div>
+                                            <ul class="list-group clear-list m-t">
+                                                <a href="#">
+                                                    <li class="list-group-item fist-item">
+                                                        Please contact me
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li class="list-group-item">
+                                                        Sign a contract
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li class="list-group-item">
+                                                        Open new shop
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li class="list-group-item">
+                                                        Call back to Sylvia
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li class="list-group-item">
+                                                        Write a letter to Sandra
+                                                    </li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <p>大学生毕业设计展示平台 <br>
+                                    Copyright t-uvw.xyz © 2015</p>
+                                </div>
+
+
                             </div>
                         </div>
 
