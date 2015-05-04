@@ -76,8 +76,8 @@
                                                 <a href="topdetail/index">
                                                     <span class="corner"></span>
 
-                                                    <div class="icon">
-                                                        <i class="img-responsive fa fa-film"></i>
+                                                    <div class="image">
+                                                        <img alt="image" class="img-responsive" src="<?php echo base_url().IMG_DIR;?>/p4.jpg">
                                                     </div>
                                                     <div class="file-name">
                                                         Monica's birthday.mpg4
@@ -98,8 +98,8 @@
                                                 <div class="file">
                                                     <span class="corner"></span>
 
-                                                    <div class="icon">
-                                                        <i class="fa fa-bar-chart-o"></i>
+                                                    <div class="image">
+                                                        <img alt="image" class="img-responsive" src="<?php echo base_url().IMG_DIR;?>/p5.jpg">
                                                     </div>
                                                     <div class="file-name">
                                                         Annual report 2014.xls
@@ -115,8 +115,8 @@
                                                 <a href="topdetail/index">
                                                     <span class="corner"></span>
 
-                                                    <div class="icon">
-                                                        <i class="fa fa-file"></i>
+                                                    <div class="image">
+                                                        <img alt="image" class="img-responsive" src="<?php echo base_url().IMG_DIR;?>/p6.jpg">
                                                     </div>
                                                     <div class="file-name">
                                                         Document_2014.doc
@@ -134,7 +134,7 @@
                                                     <span class="corner"></span>
 
                                                     <div class="image">
-                                                        <img alt="image" class="img-responsive" src="<?php echo base_url().IMG_DIR;?>/p1.jpg">
+                                                        <img alt="image" class="img-responsive" src="<?php echo base_url().IMG_DIR;?>/p7.jpg">
                                                     </div>
                                                     <div class="file-name">
                                                         Italy street.jpg
@@ -152,7 +152,7 @@
                                                     <span class="corner"></span>
 
                                                     <div class="image">
-                                                        <img alt="image" class="img-responsive" src="<?php echo base_url().IMG_DIR;?>/p2.jpg">
+                                                        <img alt="image" class="img-responsive" src="<?php echo base_url().IMG_DIR;?>/p8.jpg">
                                                     </div>
                                                     <div class="file-name">
                                                         My feel.png
