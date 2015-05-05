@@ -126,7 +126,7 @@
                                                     <span class="corner"></span>
 
                                                     <div class="icon">
-                                                        <i class="fa fa-file-pdf-o"></i>
+                                                        <i class="fa fa-file-pdf-o" style="color: #ff7851"></i>
                                                     </div>
                                                     <div class="file-name">
                                                         project_<?php echo $workinfo[0]['id']?>.pdf
