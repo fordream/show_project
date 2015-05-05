@@ -17,23 +17,28 @@ class Topdetail extends CI_Controller
      *  index : 用户登录界面函数
      *  @$page='index' : 默认调用视图页面
      */
-    public function index($page = 'index')
+    public function index($id, $page = 'index')
     {
-        if (!file_exists('application/views/topdetail/' . $page . '.php')) {
-            show_404();
-        }
         if(!array_key_exists('logged_in', $this->session->all_userdata())) {
+            $show_edit = false;
             $username = '游客';
         } else {
+            $show_edit = true;
             $username = $this->session->userdata('username');
         }
-//        $username = $this->session->userdata('username');
-//        $email = $this->session->userdata('email');
+
+        $this->load->model("mtopdetail");
+        $workinfo = $this->mtopdetail->get_hot_works_info($id);
+        $email = $this->session->userdata('email');
         $data = array(
             'title' => "作品详情",
             'username' => $username,
-//            'email' => $email
+            'show_edit' => $show_edit,
+            'email' => $email,
+            'workinfo' => $workinfo
+//            'id' => $id
         );
+//        var_dump($workinfo);
 
         $this->load->view('templates/header',$data);
         $this->load->view('topdetail/'.$page);

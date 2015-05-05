@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title><?php echo $title ?></title>
+    <title><?php echo $title ?>-大学生毕业设计展示平台</title>
 
     <link href="<?php echo base_url().TP_DIR; ?>/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url().PUB_DIR;?>/font-awesome/css/font-awesome.css" rel="stylesheet">

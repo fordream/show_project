@@ -21,18 +21,18 @@
 <div class="middle-box text-center loginscreen   animated fadeInDown">
     <div>
         <div>
-            <h1 class="logo-name">N+</h1>
+            <h1 class="logo-name">IN+</h1>
         </div>
         <h3>欢迎加入毕业设计作品展示平台</h3>
         <form class="m-t" role="form" action="reg_success" method="post">
             <div class="form-group">
-                <input type="text" name = "username" class="form-control" placeholder="用户名" required="">
+                <input type="text" name = "username" class="form-control" placeholder="Username" required="">
             </div>
             <div class="form-group">
-                <input type="email" name="email" class="form-control" placeholder="邮箱" required="">
+                <input type="email" name="email" class="form-control" placeholder="Email" required="">
             </div>
             <div class="form-group">
-                <input type="password" name="password" class="form-control" placeholder="密码" required="">
+                <input type="password" name="password" class="form-control" placeholder="Password" required="">
             </div>
 
 <!--            <div class="form-group">-->

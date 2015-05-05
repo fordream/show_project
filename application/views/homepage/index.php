@@ -20,142 +20,47 @@
                             <div class="ibox-content">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <div class="file-box col-lg-3">
-                                            <div class="file">
-                                                <a href="topdetail/index">
-                                                    <span class="corner"></span>
+                                        <?php for ($i=0;$i<4;$i++) { ?>
+                                            <div class="file-box col-lg-3">
+                                                <div class="file">
+                                                    <a href="topdetail/index/<?php echo $hotwork[$i]['id']?>">
+                                                        <span class="corner"></span>
 
-                                                    <div class="image">
-                                                        <img alt="image" class="img-responsive" src="<?php echo base_url().IMG_DIR;?>/p1.jpg">
-                                                    </div>
-                                                    <div class="file-name">
-                                                        Italy street.jpg
-                                                        <br/>
-                                                        <small>Added: Jan 6, 2014</small>
-                                                    </div>
-                                                </a>
+                                                        <div class="image">
+                                                            <img alt="image" class="img-responsive" src=" <?php echo base_url().IMG_DIR;?>/<?php echo $hotwork[$i]['imgpath']?> ">
+                                                        </div>
+                                                        <div class="file-name">
+                                                            <?php echo $hotwork[$i]['title']?>
+                                                            <br/>
+                                                            <small>Added: Jan 6, 2014</small> <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> <?php echo $hotwork[$i]['vote']?> </a>
+                                                        </div>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="file-box col-lg-3">
-                                            <div class="file">
-                                                <a href="topdetail/index">
-                                                    <span class="corner"></span>
-
-                                                    <div class="image">
-                                                        <img alt="image" class="img-responsive" src="<?php echo base_url().IMG_DIR;?>/p2.jpg">
-                                                    </div>
-                                                    <div class="file-name">
-                                                        My feel.png
-                                                        <br/>
-                                                        <small>Added: Jan 7, 2014</small>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="file-box col-lg-3">
-                                            <div class="file">
-                                                <a href="topdetail/index">
-                                                    <span class="corner"></span>
-
-                                                    <div class="image">
-                                                        <img alt="image" class="img-responsive" src="<?php echo base_url().IMG_DIR;?>/p3.jpg">
-                                                    </div>
-                                                    <div class="file-name">
-                                                        Document_2014.doc
-                                                        <br/>
-                                                        <small>Added: Fab 11, 2014</small>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="file-box col-lg-3">
-                                            <div class="file">
-                                                <a href="topdetail/index">
-                                                    <span class="corner"></span>
-
-                                                    <div class="image">
-                                                        <img alt="image" class="img-responsive" src="<?php echo base_url().IMG_DIR;?>/p4.jpg">
-                                                    </div>
-                                                    <div class="file-name">
-                                                        Monica's birthday.mpg4
-                                                        <br/>
-                                                        <small>Added: Fab 18, 2014</small>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <?php }?>
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <div class="file-box col-lg-3">
-                                            <a href="topdetail/index">
+                                        <?php for ($i=4;$i<8;$i++) { ?>
+                                            <div class="file-box col-lg-3">
                                                 <div class="file">
-                                                    <span class="corner"></span>
+                                                    <a href="topdetail/index/<?php echo $hotwork[$i]['id']?>">
+                                                        <span class="corner"></span>
 
-                                                    <div class="image">
-                                                        <img alt="image" class="img-responsive" src="<?php echo base_url().IMG_DIR;?>/p5.jpg">
-                                                    </div>
-                                                    <div class="file-name">
-                                                        Annual report 2014.xls
-                                                        <br/>
-                                                        <small>Added: Fab 22, 2014</small>
-                                                    </div>
+                                                        <div class="image">
+                                                            <img alt="image" class="img-responsive" src=" <?php echo base_url().IMG_DIR;?>/<?php echo $hotwork[$i]['imgpath']?> ">
+                                                        </div>
+                                                        <div class="file-name">
+                                                            <?php echo $hotwork[$i]['title']?>
+                                                            <br/>
+                                                            <small>Added: Jan 6, 2014</small> <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> <?php echo $hotwork[$i]['vote']?> </a>
+                                                        </div>
+                                                    </a>
                                                 </div>
-                                            </a>
-                                        </div>
-                                        <div class="file-box col-lg-3">
-                                            <div class="file">
-                                                <a href="topdetail/index">
-                                                    <span class="corner"></span>
-
-                                                    <div class="image">
-                                                        <img alt="image" class="img-responsive" src="<?php echo base_url().IMG_DIR;?>/p6.jpg">
-                                                    </div>
-                                                    <div class="file-name">
-                                                        Document_2014.doc
-                                                        <br/>
-                                                        <small>Added: Jan 11, 2014</small>
-                                                    </div>
-                                                </a>
                                             </div>
-
-                                        </div>
-                                        <div class="file-box col-lg-3">
-                                            <div class="file">
-                                                <a href="topdetail/index">
-                                                    <span class="corner"></span>
-
-                                                    <div class="image">
-                                                        <img alt="image" class="img-responsive" src="<?php echo base_url().IMG_DIR;?>/p7.jpg">
-                                                    </div>
-                                                    <div class="file-name">
-                                                        Italy street.jpg
-                                                        <br/>
-                                                        <small>Added: Jan 6, 2014</small>
-                                                    </div>
-                                                </a>
-
-                                            </div>
-                                        </div>
-                                        <div class="file-box col-lg-3">
-                                            <div class="file">
-                                                <a href="topdetail/index">
-                                                    <span class="corner"></span>
-
-                                                    <div class="image">
-                                                        <img alt="image" class="img-responsive" src="<?php echo base_url().IMG_DIR;?>/p8.jpg">
-                                                    </div>
-                                                    <div class="file-name">
-                                                        My feel.png
-                                                        <br/>
-                                                        <small>Added: Jan 7, 2014</small>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-
+                                        <?php }?>
                                     </div>
                                 </div>
                             </div>
@@ -185,47 +90,26 @@
             </div>
             <div class="ibox-content">
                 <div>
+                    <?php
+                        $nlabel = array(
+                            '0' => 'success',
+                            '1' => 'info',
+                            '2' => 'primary',
+                            '3' => 'default',
+                            '4' => 'primary'
+                        );
+                    ?>
                     <ul class="list-group clear-list m-t">
-                        <a href="#">
-                            <li class="list-group-item fist-item">
+                        <?php for($i=0;$i<5;$i++) { ?>
+                            <a href="topdetail/index/<?php echo $newwork[$i]['id']?>">
+                                <li class="list-group-item fist-item">
                                     <span class="pull-right">
-                                        2015 05 03 09:00 pm
+                                        <?php echo $newwork[$i]['uploadtime']?>
                                     </span>
-                                <span class="label label-success">1</span> &nbsp; Please contact me
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 10:16 am
-                                </span>
-                                <span class="label label-info">2</span> &nbsp; Sign a contract
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 08:22 pm
-                                </span>
-                                <span class="label label-primary">3</span> &nbsp; Open new shop
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 11:06 pm
-                                </span>
-                                <span class="label label-default">4</span> &nbsp; Call back to Sylvia
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 12:00 am
-                                </span>
-                                <span class="label label-primary">5</span> &nbsp; Write a letter to Sandra
-                            </li>
-                        </a>
+                                    <span class="label label-<?php echo $nlabel[$i]?>"><?php echo $i+1?></span> &nbsp; <?php echo $newwork[$i]['title']?>
+                                </li>
+                            </a>
+                        <?php } ?>
                     </ul>
                 </div>
             </div>
@@ -255,54 +139,32 @@
             </div>
             <div class="ibox-content">
                 <div>
+                    <?php
+                    $plabel = array(
+                        '0' => 'success',
+                        '1' => 'info',
+                        '2' => 'primary',
+                        '3' => 'primary',
+                        '4' => 'default'
+                    );
+                    ?>
                     <ul class="list-group clear-list m-t">
-                        <a href="#">
-                            <li class="list-group-item fist-item">
+                        <?php for($i=0;$i<5;$i++) { ?>
+                            <a href="topdetail/index/<?php echo $pushwork[$i]['id']?>">
+                                <li class="list-group-item fist-item">
                                     <span class="pull-right">
-                                        2015 05 03 09:00 pm
+                                        <?php echo $pushwork[$i]['uploadtime']?>
                                     </span>
-                                <span class="label label-success">1</span> &nbsp; Please contact me
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 10:16 am
-                                </span>
-                                <span class="label label-info">2</span> &nbsp; Sign a contract
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 08:22 pm
-                                </span>
-                                <span class="label label-primary">3</span> &nbsp; Open new shop
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 11:06 pm
-                                </span>
-                                <span class="label label-default">4</span> &nbsp; Call back to Sylvia
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 12:00 am
-                                </span>
-                                <span class="label label-primary">5</span> &nbsp; Write a letter to Sandra
-                            </li>
-                        </a>
+                                    <span class="label label-<?php echo $plabel[$i]?>"><?php echo $i+1?></span> &nbsp; <?php echo $pushwork[$i]['title']?>
+                                </li>
+                            </a>
+                        <?php } ?>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="ibox float-e-margins">
@@ -329,46 +191,16 @@
                                     <div class="ibox-content">
                                         <div>
                                             <ul class="list-group clear-list m-t">
-                                                <a href="#">
-                                                    <li class="list-group-item fist-item">
+                                                <?php for($i=0;$i<5;$i++) { ?>
+                                                    <a href="topdetail/index">
+                                                        <li class="list-group-item fist-item">
                                     <span class="pull-right">
-                                        2015 05 03 09:00 pm
+                                        <?php echo $newnote[$i]['createtime']?>
                                     </span>
-                                                        <span class="label label-success">1</span> &nbsp; Please contact me
-                                                    </li>
-                                                </a>
-                                                <a href="#">
-                                                    <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 10:16 am
-                                </span>
-                                                        <span class="label label-info">2</span> &nbsp; Sign a contract
-                                                    </li>
-                                                </a>
-                                                <a href="#">
-                                                    <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 08:22 pm
-                                </span>
-                                                        <span class="label label-primary">3</span> &nbsp; Open new shop
-                                                    </li>
-                                                </a>
-                                                <a href="#">
-                                                    <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 11:06 pm
-                                </span>
-                                                        <span class="label label-default">4</span> &nbsp; Call back to Sylvia
-                                                    </li>
-                                                </a>
-                                                <a href="#">
-                                                    <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 12:00 am
-                                </span>
-                                                        <span class="label label-primary">5</span> &nbsp; Write a letter to Sandra
-                                                    </li>
-                                                </a>
+                                                            <span class="label label-<?php echo $nlabel[$i]?>"><?php echo $i+1?></span> &nbsp; <?php echo $newnote[$i]['title']?>
+                                                        </li>
+                                                    </a>
+                                                <?php } ?>
                                             </ul>
                                         </div>
                                     </div>
@@ -399,46 +231,16 @@
                                     <div class="ibox-content">
                                         <div>
                                             <ul class="list-group clear-list m-t">
-                                                <a href="#">
-                                                    <li class="list-group-item fist-item">
+                                                <?php for($i=0;$i<5;$i++) { ?>
+                                                    <a href="topdetail/index">
+                                                        <li class="list-group-item fist-item">
                                     <span class="pull-right">
-                                        2015 05 03 09:00 pm
+                                        <?php echo $hotnote[$i]['createtime']?>
                                     </span>
-                                                        <span class="label label-success">1</span> &nbsp; Please contact me
-                                                    </li>
-                                                </a>
-                                                <a href="#">
-                                                    <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 10:16 am
-                                </span>
-                                                        <span class="label label-info">2</span> &nbsp; Sign a contract
-                                                    </li>
-                                                </a>
-                                                <a href="#">
-                                                    <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 08:22 pm
-                                </span>
-                                                        <span class="label label-primary">3</span> &nbsp; Open new shop
-                                                    </li>
-                                                </a>
-                                                <a href="#">
-                                                    <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 11:06 pm
-                                </span>
-                                                        <span class="label label-default">4</span> &nbsp; Call back to Sylvia
-                                                    </li>
-                                                </a>
-                                                <a href="#">
-                                                    <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 12:00 am
-                                </span>
-                                                        <span class="label label-primary">5</span> &nbsp; Write a letter to Sandra
-                                                    </li>
-                                                </a>
+                                                            <span class="label label-<?php echo $plabel[$i]?>"><?php echo $i+1?></span> &nbsp; <?php echo $hotnote[$i]['title']?>
+                                                        </li>
+                                                    </a>
+                                                <?php } ?>
                                             </ul>
                                         </div>
                                     </div>
@@ -457,27 +259,22 @@
                                             <ul class="list-group clear-list m-t">
                                                 <a href="#">
                                                     <li class="list-group-item fist-item">
-                                                        Please contact me
+                                                        中国知网
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Sign a contract
+                                                        万方数据知识服务平台
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Open new shop
+                                                        万方论文检测
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Call back to Sylvia
-                                                    </li>
-                                                </a>
-                                                <a href="#">
-                                                    <li class="list-group-item">
-                                                        Write a letter to Sandra
+                                                        毕业设计网
                                                     </li>
                                                 </a>
                                             </ul>
@@ -488,27 +285,22 @@
                                             <ul class="list-group clear-list m-t">
                                                 <a href="#">
                                                     <li class="list-group-item fist-item">
-                                                        Please contact me
+                                                        学府网
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Sign a contract
+                                                        计算机网络技术
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Open new shop
+                                                        百度学术
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Call back to Sylvia
-                                                    </li>
-                                                </a>
-                                                <a href="#">
-                                                    <li class="list-group-item">
-                                                        Write a letter to Sandra
+                                                        Google学术搜索
                                                     </li>
                                                 </a>
                                             </ul>
@@ -519,27 +311,22 @@
                                             <ul class="list-group clear-list m-t">
                                                 <a href="#">
                                                     <li class="list-group-item fist-item">
-                                                        Please contact me
+                                                        道客巴巴
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Sign a contract
+                                                        小木虫
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Open new shop
+                                                        中国科技情报网
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Call back to Sylvia
-                                                    </li>
-                                                </a>
-                                                <a href="#">
-                                                    <li class="list-group-item">
-                                                        Write a letter to Sandra
+                                                        中国科学技术信息所
                                                     </li>
                                                 </a>
                                             </ul>
@@ -550,27 +337,22 @@
                                             <ul class="list-group clear-list m-t">
                                                 <a href="#">
                                                     <li class="list-group-item fist-item">
-                                                        Please contact me
+                                                        万方视频
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Sign a contract
+                                                        数字图书馆论坛
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Open new shop
+                                                        维普网
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Call back to Sylvia
-                                                    </li>
-                                                </a>
-                                                <a href="#">
-                                                    <li class="list-group-item">
-                                                        Write a letter to Sandra
+                                                        中国论文网
                                                     </li>
                                                 </a>
                                             </ul>
@@ -600,27 +382,27 @@
                                             <ul class="list-group clear-list m-t">
                                                 <a href="#">
                                                     <li class="list-group-item fist-item">
-                                                        Please contact me
+                                                        计算机与科学技术
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Sign a contract
+                                                        软件工程
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Open new shop
+                                                        数学
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Call back to Sylvia
+                                                        物理学
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Write a letter to Sandra
+                                                        化学
                                                     </li>
                                                 </a>
                                             </ul>
@@ -631,27 +413,27 @@
                                             <ul class="list-group clear-list m-t">
                                                 <a href="#">
                                                     <li class="list-group-item fist-item">
-                                                        Please contact me
+                                                        逻辑学
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Sign a contract
+                                                        应用经济学
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Open new shop
+                                                        金融
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Call back to Sylvia
+                                                        天文学
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Write a letter to Sandra
+                                                        地理学
                                                     </li>
                                                 </a>
                                             </ul>
@@ -662,27 +444,27 @@
                                             <ul class="list-group clear-list m-t">
                                                 <a href="#">
                                                     <li class="list-group-item fist-item">
-                                                        Please contact me
+                                                        生命科学
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Sign a contract
+                                                        环境与资源
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Open new shop
+                                                        材料学
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Call back to Sylvia
+                                                        车辆工程
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Write a letter to Sandra
+                                                        微电子
                                                     </li>
                                                 </a>
                                             </ul>
@@ -693,27 +475,27 @@
                                             <ul class="list-group clear-list m-t">
                                                 <a href="#">
                                                     <li class="list-group-item fist-item">
-                                                        Please contact me
+                                                        土木工程
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Sign a contract
+                                                        通信工程
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Open new shop
+                                                        农学
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Call back to Sylvia
+                                                        园艺学
                                                     </li>
                                                 </a>
                                                 <a href="#">
                                                     <li class="list-group-item">
-                                                        Write a letter to Sandra
+                                                        临床医学
                                                     </li>
                                                 </a>
                                             </ul>
@@ -724,308 +506,63 @@
                         </div>
 
                         <div class="ibox-content forum-container">
-
+                            <?php
+                                $faarray = array(
+                                    '0' => 'shield',
+                                    '1' => 'bolt',
+                                    '2' => 'calendar',
+                                    '3' => 'star',
+                                    '4' => 'clock-o',
+                                    '5' => 'bomb',
+                                    '6' => 'bookmark',
+                                    '7' => 'ambulance'
+                                );
+                            ?>
                             <div class="forum-title">
-                                <div class="pull-right forum-desc">
-                                    <samll>Total posts: 320,800</samll>
-                                </div>
-                                <h3>General subjects</h3>
+                                <h3>热门项目</h3>
                             </div>
-
-                            <div class="forum-item active">
-                                <div class="row">
-                                    <div class="col-md-9">
-                                        <div class="forum-icon">
-                                            <i class="fa fa-shield"></i>
+                            <?php for($i=0;$i<8;$i++) { ?>
+                                <div class="forum-item active">
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <div class="forum-icon">
+                                                <i class="fa fa-<?php echo $faarray[$i]?>"></i>
+                                            </div>
+                                            <a href="topdetail/index/<?php echo $hotwork[$i]['id']?>" class="forum-item-title"><?php echo $hotwork[$i]['title']?></a>
+                                            <div class="forum-sub-title">Talk about sports, entertainment, music, movies, your favorite color, talk about enything.</div>
                                         </div>
-                                        <a href="forum_post.html" class="forum-item-title">General Discussion</a>
-                                        <div class="forum-sub-title">Talk about sports, entertainment, music, movies, your favorite color, talk about enything.</div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
+                                        <div class="col-md-1 forum-info">
                                         <span class="views-number">
-                                            1216
+                                            <small><?php echo $hotwork[$i]['author']?></small>
                                         </span>
-                                        <div>
-                                            <small>Views</small>
+                                            <div>
+                                                <small>上传</small>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
+                                        <div class="col-md-1 forum-info">
                                         <span class="views-number">
-                                            368
+                                            <?php echo $hotwork[$i]['vote']?>
                                         </span>
-                                        <div>
-                                            <small>Topics</small>
+                                            <div>
+                                                <small>获赞</small>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
+                                        <div class="col-md-1 forum-info">
                                         <span class="views-number">
-                                            140
+                                            <?php echo $hotwork[$i]['reward']?>
                                         </span>
-                                        <div>
-                                            <small>Posts</small>
+                                            <div>
+                                                <small>获奖</small>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="forum-item">
-                                <div class="row">
-                                    <div class="col-md-9">
-                                        <div class="forum-icon">
-                                            <i class="fa fa-bolt"></i>
-                                        </div>
-                                        <a href="forum_post.html" class="forum-item-title">Introductions</a>
-                                        <div class="forum-sub-title">New to the community? Please stop by, say hi and tell us a bit about yourself. </div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            890
-                                        </span>
-                                        <div>
-                                            <small>Views</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            120
-                                        </span>
-                                        <div>
-                                            <small>Topics</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            154
-                                        </span>
-                                        <div>
-                                            <small>Posts</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="forum-item active">
-                                <div class="row">
-                                    <div class="col-md-9">
-                                        <div class="forum-icon">
-                                            <i class="fa fa-calendar"></i>
-                                        </div>
-                                        <a href="forum_post.html" class="forum-item-title">Announcements</a>
-                                        <div class="forum-sub-title">This forum features announcements from the community staff. If there is a new post in this forum, please check it out. </div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            680
-                                        </span>
-                                        <div>
-                                            <small>Views</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            124
-                                        </span>
-                                        <div>
-                                            <small>Topics</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            61
-                                        </span>
-                                        <div>
-                                            <small>Posts</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="forum-item">
-                                <div class="row">
-                                    <div class="col-md-9">
-                                        <div class="forum-icon">
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <a href="forum_post.html" class="forum-item-title">Staff Discussion</a>
-                                        <div class="forum-sub-title">This forum is for private, staff member only discussions, usually pertaining to the community itself. </div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            1450
-                                        </span>
-                                        <div>
-                                            <small>Views</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            652
-                                        </span>
-                                        <div>
-                                            <small>Topics</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            572
-                                        </span>
-                                        <div>
-                                            <small>Posts</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="forum-title">
-                                <div class="pull-right forum-desc">
-                                    <samll>Total posts: 17,800,600</samll>
-                                </div>
-                                <h3>Other subjects</h3>
-                            </div>
-
-                            <div class="forum-item">
-                                <div class="row">
-                                    <div class="col-md-9">
-                                        <div class="forum-icon">
-                                            <i class="fa fa-clock-o"></i>
-                                        </div>
-                                        <a href="forum_post.html" class="forum-item-title">Lorem Ipsum is simply dummy text. </a>
-                                        <div class="forum-sub-title">Various versions have evolved over the years, sometimes by accident, sometimes on purpose passage of Lorem Ipsum (injected humour and the like).</div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            1516
-                                        </span>
-                                        <div>
-                                            <small>Views</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            238
-                                        </span>
-                                        <div>
-                                            <small>Topics</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            180
-                                        </span>
-                                        <div>
-                                            <small>Posts</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="forum-item">
-                                <div class="row">
-                                    <div class="col-md-9">
-                                        <div class="forum-icon">
-                                            <i class="fa fa-bomb"></i>
-                                        </div>
-                                        <a href="forum_post.html" class="forum-item-title">There are many variations of passages</a>
-                                        <div class="forum-sub-title"> If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the . </div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            1766
-                                        </span>
-                                        <div>
-                                            <small>Views</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            321
-                                        </span>
-                                        <div>
-                                            <small>Topics</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            42
-                                        </span>
-                                        <div>
-                                            <small>Posts</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="forum-item">
-                                <div class="row">
-                                    <div class="col-md-9">
-                                        <div class="forum-icon">
-                                            <i class="fa fa-bookmark"></i>
-                                        </div>
-                                        <a href="forum_post.html" class="forum-item-title">The standard chunk of Lorem Ipsum</a>
-                                        <div class="forum-sub-title">Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            765
-                                        </span>
-                                        <div>
-                                            <small>Views</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            90
-                                        </span>
-                                        <div>
-                                            <small>Topics</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            11
-                                        </span>
-                                        <div>
-                                            <small>Posts</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="forum-item">
-                                <div class="row">
-                                    <div class="col-md-9">
-                                        <div class="forum-icon">
-                                            <i class="fa fa-ambulance"></i>
-                                        </div>
-                                        <a href="forum_post.html" class="forum-item-title">Lorem Ipsum, you need to be sure there</a>
-                                        <div class="forum-sub-title">Internet tend to repeat predefined chunks as necessary, making this the</div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            2550
-                                        </span>
-                                        <div>
-                                            <small>Views</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            122
-                                        </span>
-                                        <div>
-                                            <small>Topics</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            92
-                                        </span>
-                                        <div>
-                                            <small>Posts</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                            <?php } ?>
                             <div class="text-center">
                                 <div class="btn-group">
                                     <button class="btn btn-white" type="button"><i class="fa fa-chevron-left"></i></button>
-                                    <button class="btn btn-white">1</button>
-                                    <button class="btn btn-white  active">2</button>
+                                    <button class="btn btn-white  active">1</button>
+                                    <button class="btn btn-white">2</button>
                                     <button class="btn btn-white">3</button>
                                     <button class="btn btn-white">4</button>
                                     <button class="btn btn-white">5</button>
@@ -1073,7 +610,7 @@
                                     <span class="pull-right">
                                         2015 05 03 09:00 pm
                                     </span>
-                                                        <span class="label label-success">1</span> &nbsp; Please contact me
+                                                        <span class="label label-success">1</span> &nbsp; 【求助】毕业设计等于毕业论文吗
                                                     </li>
                                                 </a>
                                                 <a href="#">
@@ -1081,7 +618,7 @@
                                 <span class="pull-right">
                                     2015 05 03 10:16 am
                                 </span>
-                                                        <span class="label label-info">2</span> &nbsp; Sign a contract
+                                                        <span class="label label-info">2</span> &nbsp; 【分享】参考文献分类
                                                     </li>
                                                 </a>
                                                 <a href="#">
@@ -1089,7 +626,7 @@
                                 <span class="pull-right">
                                     2015 05 03 08:22 pm
                                 </span>
-                                                        <span class="label label-primary">3</span> &nbsp; Open new shop
+                                                        <span class="label label-primary">3</span> &nbsp; 【求助】直流电源绝缘监测
                                                     </li>
                                                 </a>
                                                 <a href="#">
@@ -1097,7 +634,7 @@
                                 <span class="pull-right">
                                     2015 05 03 11:06 pm
                                 </span>
-                                                        <span class="label label-default">4</span> &nbsp; Call back to Sylvia
+                                                        <span class="label label-default">4</span> &nbsp; 【福利】文献查找常用方法
                                                     </li>
                                                 </a>
                                                 <a href="#">
@@ -1105,7 +642,7 @@
                                 <span class="pull-right">
                                     2015 05 03 12:00 am
                                 </span>
-                                                        <span class="label label-primary">5</span> &nbsp; Write a letter to Sandra
+                                                        <span class="label label-primary">5</span> &nbsp; 【介绍】我的毕业设计思路
                                                     </li>
                                                 </a>
                                             </ul>
@@ -1143,7 +680,7 @@
                                     <span class="pull-right">
                                         2015 05 03 09:00 pm
                                     </span>
-                                                        <span class="label label-success">1</span> &nbsp; Please contact me
+                                                        <span class="label label-success">1</span> &nbsp; 【讨论】宿舍管理系统一般思路
                                                     </li>
                                                 </a>
                                                 <a href="#">
@@ -1151,7 +688,7 @@
                                 <span class="pull-right">
                                     2015 05 03 10:16 am
                                 </span>
-                                                        <span class="label label-info">2</span> &nbsp; Sign a contract
+                                                        <span class="label label-info">2</span> &nbsp; 【讨论】大家都做过工资管理系统吗
                                                     </li>
                                                 </a>
                                                 <a href="#">
@@ -1159,7 +696,7 @@
                                 <span class="pull-right">
                                     2015 05 03 08:22 pm
                                 </span>
-                                                        <span class="label label-primary">3</span> &nbsp; Open new shop
+                                                        <span class="label label-primary">3</span> &nbsp; 【统计】有多少还没有做完毕设？
                                                     </li>
                                                 </a>
                                                 <a href="#">
@@ -1167,7 +704,7 @@
                                 <span class="pull-right">
                                     2015 05 03 11:06 pm
                                 </span>
-                                                        <span class="label label-default">4</span> &nbsp; Call back to Sylvia
+                                                        <span class="label label-default">4</span> &nbsp; 【分享】我自己整理的分类资料
                                                     </li>
                                                 </a>
                                                 <a href="#">
@@ -1175,7 +712,7 @@
                                 <span class="pull-right">
                                     2015 05 03 12:00 am
                                 </span>
-                                                        <span class="label label-primary">5</span> &nbsp; Write a letter to Sandra
+                                                        <span class="label label-primary">5</span> &nbsp; 【分享】谈谈我做毕设的过程
                                                     </li>
                                                 </a>
                                             </ul>
@@ -1508,7 +1045,7 @@
                         <div class="animation-efect-links text-center">
                             <h2 class="text-center">
                                 <span class="text-navy">标签云</span>
-                            </h2>
+                            </h2> <br>
 
                             <!--<h5 class="text-navy">Attention Seekers</h5>-->
                             <a href="#" class="btn btn-primary animation_select" data-animation="bounce">bounce</a>

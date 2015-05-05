@@ -27,14 +27,27 @@ class Homepage extends CI_Controller
         } else {
             $username = $this->session->userdata('username');
         }
+
+        $this->load->model("mhomepage");
+        $hotwork = $this->mhomepage->get_hot_works();
+        $newwork = $this->mhomepage->get_new_works();
+        $pushwork = $this->mhomepage->get_push_works();
+        $newnote = $this->mhomepage->get_new_note();
+        $hotnote = $this->mhomepage->get_hot_note();
 //        $username = $this->session->userdata('username');
 //        $email = $this->session->userdata('email');
         $data = array(
             'title' => "首页",
             'username' => $username,
+            'hotwork' => $hotwork,
+            'newwork' => $newwork,
+            'pushwork' => $pushwork,
+            'newnote' => $newnote,
+            'hotnote' => $hotnote
 //            'email' => $email
         );
 
+//        var_dump($hotwork);
         $this->load->view('templates/header',$data);
         $this->load->view('homepage/'.$page);
         $this->load->view('templates/task_footer');

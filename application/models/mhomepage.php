@@ -27,4 +27,69 @@ class Mhomepage extends MY_model
         }
         return true;
     }
+
+    function get_hot_works()
+    {
+        $config = parent::select_DB("etc_privileges");
+        $this->load->database($config);
+
+        $sql = "SELECT `id`,`title`,`vote`,`imgpath`,`author`,`reward`
+                FROM works
+                ORDER BY `vote` DESC
+                LIMIT 8";
+
+        return $this->my_query("etc_privileges", $sql)->result_array();
+    }
+
+    function get_new_works()
+    {
+        $config = parent::select_DB("etc_privileges");
+        $this->load->database($config);
+
+        $sql = "SELECT `id`,`title`,`uploadtime`
+                FROM works
+                ORDER BY `uploadtime` DESC
+                LIMIT 5";
+
+        return $this->my_query("etc_privileges", $sql)->result_array();
+    }
+
+    function get_push_works()
+    {
+        $config = parent::select_DB("etc_privileges");
+        $this->load->database($config);
+
+        $sql = "SELECT `id`,`title`,`uploadtime`
+                FROM works
+                ORDER BY `reward` DESC
+                LIMIT 5";
+
+        return $this->my_query("etc_privileges", $sql)->result_array();
+    }
+
+    function get_new_note()
+    {
+        $config = parent::select_DB("etc_privileges");
+        $this->load->database($config);
+
+        $sql = "SELECT `title`,`createtime`
+                FROM `note`
+                ORDER BY `createtime` DESC
+                LIMIT 5";
+
+        return $this->my_query("etc_privileges", $sql)->result_array();
+    }
+
+    function get_hot_note()
+    {
+        $config = parent::select_DB("etc_privileges");
+        $this->load->database($config);
+
+        $sql = "SELECT `title`,`createtime`
+                FROM `note`
+                ORDER BY `comments` DESC
+                LIMIT 5";
+
+        return $this->my_query("etc_privileges", $sql)->result_array();
+    }
 }
