@@ -58,7 +58,7 @@
                                 </div>
                             <?php endforeach ?>
                             <br>
-                            <textarea class="form-control message-input" name="message" placeholder="Enter message text"></textarea>
+                            <textarea class="form-control message-input" name="message" placeholder="输入评论..."></textarea>
 
                         </div>
 

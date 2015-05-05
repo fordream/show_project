@@ -92,4 +92,16 @@ class Mhomepage extends MY_model
 
         return $this->my_query("etc_privileges", $sql)->result_array();
     }
+
+    function get_all_note()
+    {
+        $config = parent::select_DB("etc_privileges");
+        $this->load->database($config);
+
+        $sql = "SELECT `id`,`title`,`createtime`,`author`,`comments`,`vote`
+                FROM `note`
+                ORDER BY `createtime` DESC";
+
+        return $this->my_query("etc_privileges", $sql)->result_array();
+    }
 }

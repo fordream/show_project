@@ -34,6 +34,7 @@ class Homepage extends CI_Controller
         $pushwork = $this->mhomepage->get_push_works();
         $newnote = $this->mhomepage->get_new_note();
         $hotnote = $this->mhomepage->get_hot_note();
+        $allnote = $this->mhomepage->get_all_note();
 //        $username = $this->session->userdata('username');
 //        $email = $this->session->userdata('email');
         $data = array(
@@ -43,7 +44,8 @@ class Homepage extends CI_Controller
             'newwork' => $newwork,
             'pushwork' => $pushwork,
             'newnote' => $newnote,
-            'hotnote' => $hotnote
+            'hotnote' => $hotnote,
+            'allnote' =>$allnote
 //            'email' => $email
         );
 
