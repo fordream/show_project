@@ -7,11 +7,8 @@
                 <li>
                     <a href="homepage/index">首页</a>
                 </li>
-                <li>
-                    <a>本期优秀作品</a>
-                </li>
                 <li class="active">
-                    <strong>作品名称</strong>
+                    <strong>详情页面</strong>
                 </li>
             </ol>
         </div>
@@ -115,7 +112,7 @@
                                                         <img alt="image" class="img-responsive" src="<?php echo base_url().IMG_DIR;?>/<?php echo $workinfo[0]['imgpath']?>">
                                                     </div>
                                                     <div class="file-name">
-                                                        project_face.jpg
+                                                        project_face_<?php echo $workinfo[0]['id']?>.jpg
                                                         <br/>
                                                         <small><?php echo $workinfo[0]['uploadtime']?></small>
                                                     </div>

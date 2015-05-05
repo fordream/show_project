@@ -192,7 +192,7 @@
                                         <div>
                                             <ul class="list-group clear-list m-t">
                                                 <?php for($i=0;$i<5;$i++) { ?>
-                                                    <a href="topdetail/index">
+                                                    <a href="topdetail/notedetail/<?php echo $newnote[$i]['id']?>">
                                                         <li class="list-group-item fist-item">
                                     <span class="pull-right">
                                         <?php echo $newnote[$i]['createtime']?>
@@ -232,7 +232,7 @@
                                         <div>
                                             <ul class="list-group clear-list m-t">
                                                 <?php for($i=0;$i<5;$i++) { ?>
-                                                    <a href="topdetail/index">
+                                                    <a href="topdetail/notedetail/<?php echo $hotnote[$i]['id']?>">
                                                         <li class="list-group-item fist-item">
                                     <span class="pull-right">
                                         <?php echo $hotnote[$i]['createtime']?>
@@ -605,46 +605,16 @@
                                     <div class="ibox-content">
                                         <div>
                                             <ul class="list-group clear-list m-t">
-                                                <a href="#">
-                                                    <li class="list-group-item fist-item">
+                                                <?php for($i=0;$i<5;$i++) { ?>
+                                                    <a href="topdetail/notedetail/<?php echo $newnote[$i]['id']?>">
+                                                        <li class="list-group-item fist-item">
                                     <span class="pull-right">
-                                        2015 05 03 09:00 pm
+                                        <?php echo $newnote[$i]['createtime']?>
                                     </span>
-                                                        <span class="label label-success">1</span> &nbsp; 【求助】毕业设计等于毕业论文吗
-                                                    </li>
-                                                </a>
-                                                <a href="#">
-                                                    <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 10:16 am
-                                </span>
-                                                        <span class="label label-info">2</span> &nbsp; 【分享】参考文献分类
-                                                    </li>
-                                                </a>
-                                                <a href="#">
-                                                    <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 08:22 pm
-                                </span>
-                                                        <span class="label label-primary">3</span> &nbsp; 【求助】直流电源绝缘监测
-                                                    </li>
-                                                </a>
-                                                <a href="#">
-                                                    <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 11:06 pm
-                                </span>
-                                                        <span class="label label-default">4</span> &nbsp; 【福利】文献查找常用方法
-                                                    </li>
-                                                </a>
-                                                <a href="#">
-                                                    <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 12:00 am
-                                </span>
-                                                        <span class="label label-primary">5</span> &nbsp; 【介绍】我的毕业设计思路
-                                                    </li>
-                                                </a>
+                                                            <span class="label label-<?php echo $nlabel[$i]?>"><?php echo $i+1?></span> &nbsp; <?php echo $newnote[$i]['title']?>
+                                                        </li>
+                                                    </a>
+                                                <?php } ?>
                                             </ul>
                                         </div>
                                     </div>
@@ -675,46 +645,16 @@
                                     <div class="ibox-content">
                                         <div>
                                             <ul class="list-group clear-list m-t">
-                                                <a href="#">
-                                                    <li class="list-group-item fist-item">
+                                                <?php for($i=0;$i<5;$i++) { ?>
+                                                    <a href="topdetail/notedetail/<?php echo $hotnote[$i]['id']?>">
+                                                        <li class="list-group-item fist-item">
                                     <span class="pull-right">
-                                        2015 05 03 09:00 pm
+                                        <?php echo $hotnote[$i]['createtime']?>
                                     </span>
-                                                        <span class="label label-success">1</span> &nbsp; 【讨论】宿舍管理系统一般思路
-                                                    </li>
-                                                </a>
-                                                <a href="#">
-                                                    <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 10:16 am
-                                </span>
-                                                        <span class="label label-info">2</span> &nbsp; 【讨论】大家都做过工资管理系统吗
-                                                    </li>
-                                                </a>
-                                                <a href="#">
-                                                    <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 08:22 pm
-                                </span>
-                                                        <span class="label label-primary">3</span> &nbsp; 【统计】有多少还没有做完毕设？
-                                                    </li>
-                                                </a>
-                                                <a href="#">
-                                                    <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 11:06 pm
-                                </span>
-                                                        <span class="label label-default">4</span> &nbsp; 【分享】我自己整理的分类资料
-                                                    </li>
-                                                </a>
-                                                <a href="#">
-                                                    <li class="list-group-item">
-                                <span class="pull-right">
-                                    2015 05 03 12:00 am
-                                </span>
-                                                        <span class="label label-primary">5</span> &nbsp; 【分享】谈谈我做毕设的过程
-                                                    </li>
-                                                </a>
+                                                            <span class="label label-<?php echo $plabel[$i]?>"><?php echo $i+1?></span> &nbsp; <?php echo $hotnote[$i]['title']?>
+                                                        </li>
+                                                    </a>
+                                                <?php } ?>
                                             </ul>
                                         </div>
                                     </div>
@@ -724,9 +664,9 @@
 
                         <div class="ibox">
                             <div class="ibox-title">
-                                <h5>All projects assigned to this account</h5>
+                                <h5>所有帖子</h5>
                                 <div class="ibox-tools">
-                                    <a href="" class="btn btn-primary btn-xs">Create new project</a>
+                                    <a href="" class="btn btn-primary btn-xs">发表帖子</a>
                                 </div>
                             </div>
                             <div class="ibox-content">
@@ -735,7 +675,7 @@
                                         <button type="button" id="loading-example-btn" class="btn btn-white btn-sm" ><i class="fa fa-refresh"></i> Refresh</button>
                                     </div>
                                     <div class="col-md-11">
-                                        <div class="input-group"><input type="text" placeholder="Search" class="input-sm form-control"> <span class="input-group-btn">
+                                        <div class="input-group"><input type="text" placeholder="搜索" class="input-sm form-control"> <span class="input-group-btn">
                                         <button type="button" class="btn btn-sm btn-primary"> Go!</button> </span></div>
                                     </div>
                                 </div>

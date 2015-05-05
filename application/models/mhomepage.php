@@ -72,7 +72,7 @@ class Mhomepage extends MY_model
         $config = parent::select_DB("etc_privileges");
         $this->load->database($config);
 
-        $sql = "SELECT `title`,`createtime`
+        $sql = "SELECT `id`,`title`,`createtime`
                 FROM `note`
                 ORDER BY `createtime` DESC
                 LIMIT 5";
@@ -85,7 +85,7 @@ class Mhomepage extends MY_model
         $config = parent::select_DB("etc_privileges");
         $this->load->database($config);
 
-        $sql = "SELECT `title`,`createtime`
+        $sql = "SELECT `id`,`title`,`createtime`
                 FROM `note`
                 ORDER BY `comments` DESC
                 LIMIT 5";

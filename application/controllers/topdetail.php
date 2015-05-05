@@ -48,4 +48,40 @@ class Topdetail extends CI_Controller
         $this->load->view('homepage/footer_function_add');
         $this->load->view('templates/task_footer_final');
     }
+
+    function notedetail($id, $page = 'notedetail')
+    {
+        if(!array_key_exists('logged_in', $this->session->all_userdata())) {
+            $show_edit = false;
+            $username = '游客';
+        } else {
+            $show_edit = true;
+            $username = $this->session->userdata('username');
+        }
+
+        $this->load->model("mtopdetail");
+//        $workinfo = $this->mtopdetail->get_hot_works_info($id);
+        $noteinfo = $this->mtopdetail->get_note_info($id);
+        $notecomments = $this->mtopdetail->get_note_comments($id);
+        $email = $this->session->userdata('email');
+        $data = array(
+            'title' => "作品详情",
+            'username' => $username,
+            'show_edit' => $show_edit,
+            'email' => $email,
+            'noteinfo' => $noteinfo,
+            'notecomments' => $notecomments
+//            'workinfo' => $workinfo
+//            'id' => $id
+        );
+//        var_dump($workinfo);
+
+        $this->load->view('templates/header',$data);
+        $this->load->view('topdetail/'.$page);
+        $this->load->view('templates/task_footer');
+        $this->load->view('templates/task_footer_script');
+        $this->load->view('templates/task_footer_function');
+        $this->load->view('homepage/footer_function_add');
+        $this->load->view('templates/task_footer_final');
+    }
 }
