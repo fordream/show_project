@@ -257,22 +257,22 @@
                                     <div class="col-lg-3">
                                         <div>
                                             <ul class="list-group clear-list m-t">
-                                                <a href="#">
+                                                <a href="http://www.cnki.net/">
                                                     <li class="list-group-item fist-item">
                                                         中国知网
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a href="http://www.wanfangdata.com.cn/">
                                                     <li class="list-group-item">
                                                         万方数据知识服务平台
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a href="http://www.gsiw.cn/">
                                                     <li class="list-group-item">
                                                         万方论文检测
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a href="http://www.biyenet.com.cn/">
                                                     <li class="list-group-item">
                                                         毕业设计网
                                                     </li>
@@ -283,22 +283,22 @@
                                     <div class="col-lg-3">
                                         <div>
                                             <ul class="list-group clear-list m-t">
-                                                <a href="#">
+                                                <a href="http://exuefu.com/">
                                                     <li class="list-group-item fist-item">
                                                         学府网
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a href="http://www.jsjbbs.cn/">
                                                     <li class="list-group-item">
                                                         计算机网络技术
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a href="http://xueshu.baidu.com/">
                                                     <li class="list-group-item">
                                                         百度学术
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a href="http://google.com">
                                                     <li class="list-group-item">
                                                         Google学术搜索
                                                     </li>
@@ -309,22 +309,22 @@
                                     <div class="col-lg-3">
                                         <div>
                                             <ul class="list-group clear-list m-t">
-                                                <a href="#">
+                                                <a href="http://www.doc88.com/">
                                                     <li class="list-group-item fist-item">
                                                         道客巴巴
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a href="http://emuch.net/bbs/">
                                                     <li class="list-group-item">
                                                         小木虫
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a href="http://www.chinainfo.gov.cn">
                                                     <li class="list-group-item">
                                                         中国科技情报网
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a href="http://www.istic.ac.cn/">
                                                     <li class="list-group-item">
                                                         中国科学技术信息所
                                                     </li>
@@ -335,22 +335,22 @@
                                     <div class="col-lg-3">
                                         <div>
                                             <ul class="list-group clear-list m-t">
-                                                <a href="#">
+                                                <a href="http://video.wanfangdata.com.cn/">
                                                     <li class="list-group-item fist-item">
                                                         万方视频
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a href="http://www.dlf.net.cn/index.asp">
                                                     <li class="list-group-item">
                                                         数字图书馆论坛
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a href="http://www.cqvip.com/">
                                                     <li class="list-group-item">
                                                         维普网
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a href="http://www.xzbu.com/">
                                                     <li class="list-group-item">
                                                         中国论文网
                                                     </li>
@@ -706,8 +706,6 @@
                                         <?php endforeach?>
                                         </tbody>
                                     </table>
-
-<!--                                    <div class="hr-line-dashed"></div>-->
                                     <div class="text-center">
                                         <div class="btn-group">
                                             <button class="btn btn-white" type="button"><i class="fa fa-chevron-left"></i></button>

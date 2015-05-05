@@ -24,7 +24,7 @@ class Mtopdetail extends MY_model
         $config = parent::select_DB("etc_privileges");
         $this->load->database($config);
 
-        $sql = "SELECT `id`,`title`,`createtime`,`author`,`text`,`comments`
+        $sql = "SELECT `id`,`title`,`createtime`,`author`,`text`,`comments`,`note_img`,`vote`
                 FROM `note`
                 WHERE `id` = $id";
 
@@ -36,7 +36,7 @@ class Mtopdetail extends MY_model
         $config = parent::select_DB("etc_privileges");
         $this->load->database($config);
 
-        $sql = "SELECT `id`,`title`,`createtime`,`text`,`author`,`comment_img`
+        $sql = "SELECT `id`,`title`,`createtime`,`text`,`author`,`comment_img`,`vote`
                 FROM `comments`
                 WHERE `title` = $id
                 ORDER BY `createtime`";
