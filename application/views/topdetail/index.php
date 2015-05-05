@@ -23,10 +23,12 @@
                     <div class="ibox-content">
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="m-b-md">
-                                    <a href="#" class="btn btn-white btn-xs pull-right">编辑项目</a>
-                                    <h2><?php echo $workinfo[0]['title']?></h2>
-                                </div>
+                                <?php if($show_edit == true) { ?>    // 只有登录了才能编辑项目
+                                    <div class="m-b-md">
+                                        <a href="#" class="btn btn-white btn-xs pull-right">编辑项目</a>
+                                        <h2><?php echo $workinfo[0]['title']?></h2>
+                                    </div>
+                                <?php } ?>
                                 <dl class="dl-horizontal">
                                     <dt>状态:</dt> <dd><span class="label label-primary">Active</span></dd>
                                 </dl>
@@ -117,7 +119,6 @@
                                                         <small><?php echo $workinfo[0]['uploadtime']?></small>
                                                     </div>
                                                 </a>
-
                                             </div>
                                         </div>
                                         <div class="file-box">

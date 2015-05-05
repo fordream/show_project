@@ -7,6 +7,7 @@ class Mtopdetail extends MY_model
         parent::__construct();
     }
 
+    // 获取所有热门作品详细信息
     function get_hot_works_info($id)
     {
         $config = parent::select_DB("etc_privileges");
@@ -19,6 +20,7 @@ class Mtopdetail extends MY_model
         return $this->my_query("etc_privileges", $sql)->result_array();
     }
 
+    // 获取所有帖子信息
     function get_note_info($id)
     {
         $config = parent::select_DB("etc_privileges");
@@ -31,6 +33,7 @@ class Mtopdetail extends MY_model
         return $this->my_query("etc_privileges", $sql)->result_array();
     }
 
+    // 获取指定id帖子的所有评论详细信息
     function get_note_comments($id)
     {
         $config = parent::select_DB("etc_privileges");

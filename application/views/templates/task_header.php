@@ -32,8 +32,12 @@ if(!array_key_exists('logged_in', $this->session->all_userdata()))
 
     <!-- Gritter -->
     <link href="<?php echo base_url().JS_DIR;?>/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    <link href="<?php echo base_url() . CSS_DIR; ?>/plugins/summernote/summernote.css" rel="stylesheet">
+    <link href="<?php echo base_url() . CSS_DIR; ?>/plugins/summernote/summernote-bs3.css" rel="stylesheet">
 
     <link href="<?php echo base_url().CSS_DIR;?>/animate.css" rel="stylesheet">
     <link href="<?php echo base_url().CSS_DIR;?>/style.css" rel="stylesheet">
 
     <link href="<?php echo base_url() . CSS_DIR; ?>/graph/first.css" rel="stylesheet" type="text/css" />
+
+

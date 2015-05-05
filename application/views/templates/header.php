@@ -65,6 +65,22 @@
                         </li>
 
                         <li>
+                            <small>
+                            <a href="topdetail/addwork">
+                                <i class="fa fa-comment"></i> 发布作品
+                            </a>
+                            </small>
+                        </li>
+
+                        <li>
+                            <small>
+                            <a href="topdetail/addnote">
+                                <i class="fa fa-comments"></i> 发布帖子
+                            </a>
+                            </small>
+                        </li>
+
+                        <li>
                             <a href="homepage/logout">
                                 <i class="fa fa-sign-out"></i> 退出系统
                             </a>
@@ -73,5 +89,4 @@
 
                 <?php }
                 ?>
-
             </nav>

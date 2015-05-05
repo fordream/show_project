@@ -45,7 +45,7 @@ class Topdetail extends CI_Controller
         $this->load->view('templates/task_footer');
         $this->load->view('templates/task_footer_script');
         $this->load->view('templates/task_footer_function');
-        $this->load->view('homepage/footer_function_add');
+        $this->load->view('topdetail/footer_function_add');
         $this->load->view('templates/task_footer_final');
     }
 
@@ -81,7 +81,64 @@ class Topdetail extends CI_Controller
         $this->load->view('templates/task_footer');
         $this->load->view('templates/task_footer_script');
         $this->load->view('templates/task_footer_function');
-        $this->load->view('homepage/footer_function_add');
+        $this->load->view('templates/task_footer_final');
+    }
+
+    function addwork($page = 'addwork')
+    {
+        if(!array_key_exists('logged_in', $this->session->all_userdata())) {
+            $show_edit = false;
+            $username = '游客';
+        } else {
+            $show_edit = true;
+            $username = $this->session->userdata('username');
+        }
+
+        $this->load->model("mtopdetail");
+
+        $email = $this->session->userdata('email');
+        $data = array(
+            'title' => "发布作品",
+            'username' => $username,
+            'show_edit' => $show_edit,
+            'email' => $email
+        );
+
+        $this->load->view('templates/header',$data);
+        $this->load->view('topdetail/addwork');
+        $this->load->view('templates/task_footer');
+        $this->load->view('templates/task_footer_script');
+        $this->load->view('templates/task_footer_function');
+        $this->load->view('topdetail/footer_function_add');
+        $this->load->view('templates/task_footer_final');
+    }
+
+    function addnote($page = 'addnote')
+    {
+        if(!array_key_exists('logged_in', $this->session->all_userdata())) {
+            $show_edit = false;
+            $username = '游客';
+        } else {
+            $show_edit = true;
+            $username = $this->session->userdata('username');
+        }
+
+        $this->load->model("mtopdetail");
+
+        $email = $this->session->userdata('email');
+        $data = array(
+            'title' => "发布帖子",
+            'username' => $username,
+            'show_edit' => $show_edit,
+            'email' => $email
+        );
+
+        $this->load->view('templates/header',$data);
+        $this->load->view('topdetail/'.$page);
+        $this->load->view('templates/task_footer');
+        $this->load->view('templates/task_footer_script');
+        $this->load->view('templates/task_footer_function');
+        $this->load->view('topdetail/footer_function_add');
         $this->load->view('templates/task_footer_final');
     }
 }
