@@ -23,11 +23,8 @@
     <link href="<?php echo base_url() . CSS_DIR; ?>/graph/first.css" rel="stylesheet" type="text/css" />
 <body class="gray-bg boxed-layout">
 <div class="row">
-    <div class="col-lg-3">
-        </div>
-<div class="passwordBox animated fadeInDown col-lg-9" style="width: 980px">
-    <div class="row">
 
+<div class="ibox animated fadeInDown center" style="width: 980px;margin: 0px auto">
         <div class="col-md-12">
 
             <nav class="navbar navbar-static-top gray-bg" role="navigation" style="margin-bottom: 0">
