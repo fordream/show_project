@@ -370,6 +370,34 @@
 
                     </div>
 
+                    <script>
+                        function showUser(str)
+                        {
+                            if (str=="")
+                            {
+                                document.getElementById("txtHint").innerHTML="";
+                                return;
+                            }
+                            if (window.XMLHttpRequest)
+                            {// code for IE7+, Firefox, Chrome, Opera, Safari
+                                xmlhttp=new XMLHttpRequest();
+                            }
+                            else
+                            {// code for IE6, IE5
+                                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+                            }
+                            xmlhttp.onreadystatechange=function()
+                            {
+                                if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                                {
+                                    document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+                                }
+                            }
+                            xmlhttp.open("GET","./public/msearchwork.php?q="+str,true);
+                            xmlhttp.send();
+                        }
+                    </script>
+
                     <div id="tab-2" class="tab-pane">
                         <div class="ibox ">
                             <div class="ibox-title">
@@ -380,27 +408,27 @@
                                     <div class="col-lg-3">
                                         <div>
                                             <ul class="list-group clear-list m-t">
-                                                <a href="#">
+                                                <a onclick="showUser('1')">
                                                     <li class="list-group-item fist-item">
                                                         计算机与科学技术
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a onclick="showUser('2')">
                                                     <li class="list-group-item">
                                                         软件工程
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a onclick="showUser('3')">
                                                     <li class="list-group-item">
                                                         数学
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a onclick="showUser('4')">
                                                     <li class="list-group-item">
                                                         物理学
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a onclick="showUser('5')">
                                                     <li class="list-group-item">
                                                         化学
                                                     </li>
@@ -411,27 +439,27 @@
                                     <div class="col-lg-3">
                                         <div>
                                             <ul class="list-group clear-list m-t">
-                                                <a href="#">
+                                                <a onclick="showUser('6')">
                                                     <li class="list-group-item fist-item">
                                                         逻辑学
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a onclick="showUser('7')">
                                                     <li class="list-group-item">
                                                         应用经济学
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a onclick="showUser('8')">
                                                     <li class="list-group-item">
                                                         金融
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a onclick="showUser('9')">
                                                     <li class="list-group-item">
                                                         天文学
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a onclick="showUser('10')">
                                                     <li class="list-group-item">
                                                         地理学
                                                     </li>
@@ -442,27 +470,27 @@
                                     <div class="col-lg-3">
                                         <div>
                                             <ul class="list-group clear-list m-t">
-                                                <a href="#">
+                                                <a onclick="showUser('11')">
                                                     <li class="list-group-item fist-item">
                                                         生命科学
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a onclick="showUser('12')">
                                                     <li class="list-group-item">
                                                         环境与资源
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a onclick="showUser('13')">
                                                     <li class="list-group-item">
                                                         材料学
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a onclick="showUser('14')">
                                                     <li class="list-group-item">
                                                         车辆工程
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a onclick="showUser('15')">
                                                     <li class="list-group-item">
                                                         微电子
                                                     </li>
@@ -473,27 +501,27 @@
                                     <div class="col-lg-3">
                                         <div>
                                             <ul class="list-group clear-list m-t">
-                                                <a href="#">
+                                                <a onclick="showUser('16')">
                                                     <li class="list-group-item fist-item">
                                                         土木工程
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a onclick="showUser('17')">
                                                     <li class="list-group-item">
                                                         通信工程
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a onclick="showUser('18')">
                                                     <li class="list-group-item">
                                                         农学
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a onclick="showUser('19')">
                                                     <li class="list-group-item">
                                                         园艺学
                                                     </li>
                                                 </a>
-                                                <a href="#">
+                                                <a onclick="showUser('20')">
                                                     <li class="list-group-item">
                                                         临床医学
                                                     </li>
@@ -505,7 +533,7 @@
                             </div>
                         </div>
 
-                        <div class="ibox-content forum-container">
+                        <div class="ibox-content forum-container"  id="txtHint">
                             <?php
                                 $faarray = array(
                                     '0' => 'shield',
@@ -529,31 +557,31 @@
                                                 <i class="fa fa-<?php echo $faarray[$i]?>"></i>
                                             </div>
                                             <a href="topdetail/index/<?php echo $hotwork[$i]['id']?>" class="forum-item-title"><?php echo $hotwork[$i]['title']?></a>
-                                            <div class="forum-sub-title">Talk about sports, entertainment, music, movies, your favorite color, talk about enything.</div>
+                                            <div class="forum-sub-title"><?php echo $hotwork[$i]['uploadtime'];?></div>
                                         </div>
                                         <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            <small><?php echo $hotwork[$i]['author']?></small>
-                                        </span>
-                                            <div>
-                                                <small>上传</small>
-                                            </div>
+                                            <span class="views-number">
+                                                <small><?php echo $hotwork[$i]['author']?></small>
+                                            </span>
+                                                <div>
+                                                    <small>上传</small>
+                                                </div>
                                         </div>
                                         <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            <?php echo $hotwork[$i]['vote']?>
-                                        </span>
-                                            <div>
-                                                <small>获赞</small>
-                                            </div>
+                                            <span class="views-number">
+                                                <?php echo $hotwork[$i]['vote']?>
+                                            </span>
+                                                <div>
+                                                    <small>获赞</small>
+                                                </div>
                                         </div>
                                         <div class="col-md-1 forum-info">
-                                        <span class="views-number">
-                                            <?php echo $hotwork[$i]['reward']?>
-                                        </span>
-                                            <div>
-                                                <small>获奖</small>
-                                            </div>
+                                            <span class="views-number">
+                                                <?php echo $hotwork[$i]['reward']?>
+                                            </span>
+                                                <div>
+                                                    <small>获奖</small>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>

@@ -33,7 +33,7 @@ class Mhomepage extends MY_model
         $config = parent::select_DB("etc_privileges");
         $this->load->database($config);
 
-        $sql = "SELECT `id`,`title`,`vote`,`imgpath`,`author`,`reward`,`pdfpath`,`text`
+        $sql = "SELECT `id`,`title`,`vote`,`imgpath`,`author`,`reward`,`pdfpath`,`text`, `uploadtime`
                 FROM works
                 ORDER BY `vote` DESC
                 LIMIT 8";
