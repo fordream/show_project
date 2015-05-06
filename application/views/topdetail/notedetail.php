@@ -58,7 +58,15 @@
                                 </div>
                             <?php endforeach ?>
                             <br>
-                            <textarea class="form-control message-input" name="message" placeholder="输入评论..."></textarea>
+                            <form class="chat-message-form" role="form" method="post" action="topdetail/commentsucess">
+
+                                <div class="form-group">
+                                    <textarea class="form-control message-input" name="commenttext" id="commenttext" placeholder="输入评论..."></textarea>
+                                </div>
+                                <?php if(array_key_exists('logged_in', $this->session->all_userdata())) { ?>
+                                    <button type="submit" name="sub_button" id="sub_button" class="btn btn-primary block full-width m-b">评 论</button>
+                                <?php } ?>
+                            </form>
 
                         </div>
 

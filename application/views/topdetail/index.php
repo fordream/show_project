@@ -104,41 +104,41 @@
                                         <a href="#">View all images</a>
                                     </p>
 
-                                    <div class="attachment">
-                                        <div class="file-box">
-                                            <div class="file">
-                                                <a href="#">
-                                                    <span class="corner"></span>
+                                                    <div class="attachment">
+                                                        <div class="file-box">
+                                                            <div class="file">
+                                                                <a href="#">
+                                                                    <span class="corner"></span>
 
-                                                    <div class="image">
-                                                        <img alt="image" class="img-responsive" src="<?php echo base_url().IMG_DIR;?>/<?php echo $workinfo[0]['imgpath']?>">
-                                                    </div>
-                                                    <div class="file-name">
-                                                        project_face_<?php echo $workinfo[0]['id']?>.jpg
-                                                        <br/>
-                                                        <small><?php echo $workinfo[0]['uploadtime']?></small>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="file-box">
-                                            <div class="file">
-                                                <a href="#">
-                                                    <span class="corner"></span>
+                                                                    <div class="image">
+                                                                        <img alt="image" class="img-responsive" src="<?php echo base_url().IMG_DIR;?>/<?php echo $workinfo[0]['imgpath']?>">
+                                                                    </div>
+                                                                    <div class="file-name">
+                                                                        project_face_<?php echo $workinfo[0]['id']?>.jpg
+                                                                        <br/>
+                                                                        <small><?php echo $workinfo[0]['uploadtime']?></small>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="file-box">
+                                                            <div class="file">
+                                                                <a href="#">
+                                                                    <span class="corner"></span>
 
-                                                    <div class="icon">
-                                                        <i class="fa fa-file-pdf-o" style="color: #ff7851"></i>
+                                                                    <div class="icon">
+                                                                        <i class="fa fa-file-pdf-o" style="color: #ff7851"></i>
+                                                                    </div>
+                                                                    <div class="file-name">
+                                                                        project_<?php echo $workinfo[0]['id']?>.pdf
+                                                                        <br/>
+                                                                        <small><?php echo $workinfo[0]['uploadtime']?></small>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="clearfix"></div>
                                                     </div>
-                                                    <div class="file-name">
-                                                        project_<?php echo $workinfo[0]['id']?>.pdf
-                                                        <br/>
-                                                        <small><?php echo $workinfo[0]['uploadtime']?></small>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
                                 </div>
                                 <div class="mail-body text-right tooltip-demo">
                                     <a class="btn btn-sm btn-white" href="mail_compose.html"><i class="fa fa-arrow-right"></i> 追贴</a>

@@ -46,4 +46,78 @@ class Mtopdetail extends MY_model
 
         return $this->my_query("etc_privileges", $sql)->result_array();
     }
+
+    function add_note($notetitle, $notetext, $author, $note_img)
+    {
+        $config = parent::select_DB("etc_privileges");
+        $this->load->database($config);
+
+        $sql="INSERT INTO `note` (`createtime`, `title`, `author`, `text`,`note_img`) "
+            . "VALUES ('". date("Y-m-d H:i:s") ."', '$notetitle', '$author', '$notetext', '$note_img')";
+        if(!($query = $this->db->query($sql)))
+        {
+            $this->db->_error_message();
+            return false;
+        }
+        return true;
+    }
+
+    function get_now_note_id($username)
+    {
+        $config = parent::select_DB("etc_privileges");
+        $this->load->database($config);
+
+        $sql = "SELECT `id`
+                FROM `note`
+                WHERE `author` = $username
+                ORDER BY `id` DESC
+                LIMIT 1";
+
+        return $this->my_query("etc_privileges", $sql)->result_array();
+    }
+
+    function insert_note_log($username, $noteid)
+    {
+        $config = parent::select_DB("etc_privileges");
+        $this->load->database($config);
+
+        $sql="INSERT INTO `notelog` (`username`, `noteid`, `time_in`) "
+            . "VALUES ('$username', '$noteid', '". date("Y-m-d H:i:s") ."')";
+        if(!($query = $this->db->query($sql)))
+        {
+            $this->db->_error_message();
+            return false;
+        }
+        return true;
+    }
+
+    // 获取用户正在访问的帖子id
+    function get_now_note($username)
+    {
+        $config = parent::select_DB("etc_privileges");
+        $this->load->database($config);
+
+        $sql = "SELECT `id`
+                FROM `notelog`
+                WHERE `username` = '$username'
+                ORDER BY `time_in` DESC
+                LIMIT 1";
+
+        return $this->my_query("etc_privileges", $sql)->result_array();
+    }
+
+    function insert_comment($username, $commenttext, $id, $comment_img)
+    {
+        $config = parent::select_DB("etc_privileges");
+        $this->load->database($config);
+
+        $sql="INSERT INTO `comments` (`title`, `createtime`, `text`, `author`, `comment_img`) "
+            . "VALUES ('$id',  '". date("Y-m-d H:i:s") ."', '$commenttext', '$username', '$comment_img')";
+        if(!($query = $this->db->query($sql)))
+        {
+            $this->db->_error_message();
+            return false;
+        }
+        return true;
+    }
 }
