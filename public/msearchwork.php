@@ -113,47 +113,48 @@ $i = 0;
 while($row = mysqli_fetch_array($result))
 {
     echo '<div class="forum-item active">';
-echo '<div class="row">';
-echo '<div class="col-md-9">';
-echo '<div class="forum-icon">';
-echo '<i class="fa fa-'.$faarray[$i++].'"></i>';
-echo '</div>';
-echo '<a href="topdetail/index/'.$row['id'].'" class="forum-item-title">'.$row['title'].'</a>';
-
-echo '<div class="forum-sub-title">'.$row['uploadtime'].'</div>';
-echo '</div>';
-echo '<div class="col-md-1 forum-info">';
-echo '<span class="views-number">';
-echo '<small>'.$row['author'].'</small>';
-echo '</span>';
-echo '<div>';
-echo '<small>上传</small>';
-echo '</div>';
-echo '</div>';
-echo '<div class="col-md-1 forum-info">';
-echo '<span class="views-number">';
-echo $row['vote'];
-echo '</span>';
-echo '<div>';
-echo '<small>获赞</small>';
-echo '</div>';
-echo '</div>';
-echo '<div class="col-md-1 forum-info">';
-echo '<span class="views-number">';
-echo $row['reward'];
-    echo '</span>';
-    echo '<div>';
-    echo '<small>获奖</small>';
+    echo    '<div class="row">';
+    echo        '<div class="col-md-9">';
+    echo            '<div class="forum-icon">';
+    echo                '<i class="fa fa-'.$faarray[$i++].'"></i>';
+    echo            '</div>';
+    echo            '<a href="topdetail/index/'.$row['id'].'" class="forum-item-title">'.$row['title'].'</a>';
+    echo            '<div class="forum-sub-title">'.$row['uploadtime'].'</div>';
+    echo        '</div>';
+    echo        '<div class="col-md-1 forum-info">';
+    echo            '<span class="views-number">';
+    echo                '<small>'.$row['author'].'</small>';
+    echo            '</span>';
+    echo            '<div>';
+    echo                '<small>上传</small>';
+    echo            '</div>';
+    echo        '</div>';
+    echo        '<div class="col-md-1 forum-info">';
+    echo            '<span class="views-number">';
+    echo                $row['vote'];
+    echo            '</span>';
+    echo            '<div>';
+    echo                '<small>获赞</small>';
+    echo            '</div>';
+    echo        '</div>';
+    echo        '<div class="col-md-1 forum-info">';
+    echo            '<span class="views-number">';
+    echo                $row['reward'];
+    echo            '</span>';
+    echo            '<div>';
+    echo                '<small>获奖</small>';
+    echo            '</div>';
+    echo        '</div>';
+    echo    '</div>';
     echo '</div>';
-echo '</div>';
-echo '</div>';
-echo '</div>';
 }
+
 if($i == 0) {
     echo '<div class="forum-title">
-           <h3>该学科暂无记录</h3>
-       </div>';
+             <h3>该学科暂无记录</h3>
+          </div>';
 }
 
 mysqli_close($con);
+
 ?>

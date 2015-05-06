@@ -40,13 +40,12 @@
 
                                     <dt>上 传:</dt> <dd><?php echo $workinfo[0]['author']?></dd>
                                     <dt>获 赞:</dt> <dd>  <?php echo $workinfo[0]['vote']?></dd>
-                                    <dt>时 间:</dt> <dd> 	<?php echo $workinfo[0]['uploadtime']?> </dd>
                                 </dl>
                             </div>
                             <div class="col-lg-7" id="cluster_info">
                                 <dl class="dl-horizontal" >
 
-                                    <dt>最后编辑时间:</dt> <dd><?php echo $workinfo[0]['lastupdate']?></dd>
+                                    <dt>上传时间:</dt> <dd><?php echo $workinfo[0]['uploadtime']?></dd>
                                     <dt>获奖次数:</dt> <dd> 	<?php echo $workinfo[0]['reward']?> &nbsp; times</dd>
                                     <dt>合作人员:</dt>
                                     <dd class="project-people">
@@ -61,9 +60,9 @@
                         </div>
                         <div class="row">
                             <div class="mail-box-header">
-                                <div class="pull-right tooltip-demo">
+                                <div class="pull-right ">
                                     <a class="btn btn-sm btn-white"><i class="fa fa-thumbs-up"></i> <?php echo $workinfo[0]['vote']?> </a>
-                                    <a href="#" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Print email"><i class="fa fa-print"></i> </a>
+                                    <a href="#" class="btn btn-white btn-sm" ><i class="fa fa-print"></i> </a>
                                 </div>
                                 <div class="mail-tools tooltip-demo m-t-md">
                                     <h3>
