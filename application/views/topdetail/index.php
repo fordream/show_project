@@ -23,7 +23,7 @@
                     <div class="ibox-content">
                         <div class="row">
                             <div class="col-lg-12">
-                                <?php if($show_edit == true) { ?>    // 只有登录了才能编辑项目
+                                <?php if($show_edit == true) { ?>
                                     <div class="m-b-md">
                                         <a href="#" class="btn btn-white btn-xs pull-right">编辑项目</a>
                                         <h2><?php echo $workinfo[0]['title']?></h2>
@@ -80,21 +80,15 @@
 
                                 <div class="mail-body">
                                     <p>
-                                        项目表述 :
+                                        项目简述 :
                                         <br/>
                                         <br/>
-                                        随着企业的经营规模不断扩大，信息数据急剧增加，有关超市管理的各种信息也成倍增长。面对庞大的信息量，有必要开发超市管理系统来提高信息管理工作的效率。今天我们使用计算机对超市管理信息进行管理，具有手工管理所无法比拟的优点。通过这样的系统，可以做到信息的规范管理、科学统计和快速查询，从而减少管理方面的工作量,有效地提高管理的<strong>工作效率</strong>。
+                                        <?php echo $workinfo[0]['text']?>
+
+                                        <br/>
 
                                     </p>
-                                    <p>
-                                        本超市管理系统包括各类信息输入、输出信息管理、信息查询、数据表查看管理以及系统登录等几大模块。以及在这几大模块构建中简要介绍了表单的制作过程，程序的编写，添加，最后的编译过程。并且叙述了作者在软件开发过程中的<a href="#" class="text-navy">心得体会</a>管理员通过身份验证后可以拥有完全的权限管理系统。
-                                    </p>
-                                    <p>
-                                        本系统采用<strong>JSP(JAVA SERVER PAGES) 2.0</strong>为开发工具，后台数据库采用SQLSERVER2005，操作系统为Windows XP。利用软件工程原理，采用面向对象的编程方法，其开发主要包括后台数据库的建立和维护以及前端应用程序的开发两个方面，实现了超市管理的自动化和信息化。
-                                    </p>
-                                    <p>
-                                        关键词 : 超市管理 系统开发 信息管理
-                                    </p>
+                                    关键词 : 超市管理 系统开发 信息管理
                                 </div>
                                 <div class="mail-attachment">
                                     <p>
@@ -104,41 +98,41 @@
                                         <a href="#">View all images</a>
                                     </p>
 
-                                                    <div class="attachment">
-                                                        <div class="file-box">
-                                                            <div class="file">
-                                                                <a href="#">
-                                                                    <span class="corner"></span>
+                                        <div class="attachment">
+                                            <div class="file-box">
+                                                <div class="file">
+                                                    <a href="topdetail/download/<?php echo $workinfo[0]['imgpath']?>">
+                                                        <span class="corner"></span>
 
-                                                                    <div class="image">
-                                                                        <img alt="image" class="img-responsive" src="<?php echo base_url().IMG_DIR;?>/<?php echo $workinfo[0]['imgpath']?>">
-                                                                    </div>
-                                                                    <div class="file-name">
-                                                                        project_face_<?php echo $workinfo[0]['id']?>.jpg
-                                                                        <br/>
-                                                                        <small><?php echo $workinfo[0]['uploadtime']?></small>
-                                                                    </div>
-                                                                </a>
-                                                            </div>
+                                                        <div class="image">
+                                                            <img alt="image" class="img-responsive" src="<?php echo base_url().IMG_DIR;?>/<?php echo $workinfo[0]['imgpath']?>">
                                                         </div>
-                                                        <div class="file-box">
-                                                            <div class="file">
-                                                                <a href="#">
-                                                                    <span class="corner"></span>
+                                                        <div class="file-name">
+                                                            project_face_<?php echo $workinfo[0]['id']?>.jpg
+                                                            <br/>
+                                                            <small><?php echo $workinfo[0]['uploadtime']?></small>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="file-box">
+                                                <div class="file">
+                                                    <a href="topdetail/download/<?php echo $workinfo[0]['pdfpath']?>">
+                                                        <span class="corner"></span>
 
-                                                                    <div class="icon">
-                                                                        <i class="fa fa-file-pdf-o" style="color: #ff7851"></i>
-                                                                    </div>
-                                                                    <div class="file-name">
-                                                                        project_<?php echo $workinfo[0]['id']?>.pdf
-                                                                        <br/>
-                                                                        <small><?php echo $workinfo[0]['uploadtime']?></small>
-                                                                    </div>
-                                                                </a>
-                                                            </div>
+                                                        <div class="icon">
+                                                            <i class="fa fa-file-pdf-o" style="color: #ff7851"></i>
                                                         </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
+                                                        <div class="file-name">
+                                                            project_<?php echo $workinfo[0]['id']?>.pdf
+                                                            <br/>
+                                                            <small><?php echo $workinfo[0]['uploadtime']?></small>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
                                 </div>
                                 <div class="mail-body text-right tooltip-demo">
                                     <a class="btn btn-sm btn-white" href="mail_compose.html"><i class="fa fa-arrow-right"></i> 追贴</a>

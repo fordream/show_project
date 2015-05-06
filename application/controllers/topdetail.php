@@ -14,10 +14,10 @@ class Topdetail extends CI_Controller
     }
 
     //文件上传
-    function fileUp(){
-        $url = base_url().IMG_DIR;
+    function imgUp() {
+        $url = "./public/images";
         $config['upload_path'] = $url;
-        $config['allowed_types'] = 'pdf|jpg|png';//文件类型
+        $config['allowed_types'] = 'pdf|jpg|png|jpeg';//文件类型
         $config['max_size'] = '0';
         $config['encrypt_name'] = true;
         $this->load->library('upload',$config);
@@ -25,6 +25,62 @@ class Topdetail extends CI_Controller
             $upload_data = $this->upload->data();
             return $upload_data['file_name'];
         }
+    }
+
+    function pdfUp() {
+        $url = "./public/pdf";
+        $config['upload_path'] = $url;
+        $config['allowed_types'] = 'pdf|jpg|png|jpeg';//文件类型
+        $config['max_size'] = '0';
+        $config['encrypt_name'] = true;
+        $this->load->library('upload',$config);
+        if ($this->upload->do_upload('pdf')) {
+            $upload_data = $this->upload->data();
+            return $upload_data['file_name'];
+        }
+    }
+
+    function download($path)
+    {
+        $fullpath = "./public/images/".$path;
+        $this->load->helper('download');
+        $data = file_get_contents("$fullpath");
+        $name = $path;
+        force_download($name, $data);
+    }
+
+    public function addworksucess($page = 'addworksucess')
+    {
+        if ( ! file_exists('application/views/topdetail/'.$page.'.php'))
+        {
+            show_404();
+        }
+        $username = $this->session->userdata('username');
+        $data['title'] = "发表成功";
+        $data['username'] = $username;
+
+        $_POST['image'] = $this->imgUp();
+        $_POST['pdf'] = $this->pdfUp();
+//        $_POST['workpdf'] = $this->fileUp();
+        $worktitle = $this->input->post('worktitle', true);
+        $workauthor = $this->input->post('workauthor', true);
+        $workreward = $this->input->post('workreward', true);
+        $worktext = $this->input->post('worktext', true);
+
+        $this->load->model("mtopdetail");
+        $this->mtopdetail->insert_work($worktitle, $workauthor, $_POST['pdf'], $_POST['image'], $workreward, $worktext); // 插入新作品
+
+        $workidtemp = $this->mtopdetail->get_now_workid($username, $worktitle);
+        $workid = $workidtemp[0]['id'];
+//        var_dump($workid);
+//        $note_img = 'a'.rand(1,8).'.jpg';
+//        $this->mtopdetail->add_note($notetitle, $notetext, $username, $note_img);
+
+//        $now_note_id = $this->mtopdetail->get_now_note_id($username);
+
+//        $data['now_note_id'] = $now_note_id[0]['id'];   // 记录刚插入的帖子id
+
+        redirect('topdetail/index/'.$workid);
     }
 
     /*

@@ -37,36 +37,32 @@
 
                             <div class="mail-body">
 
-                                <form class="form-horizontal" method="get">
+                                <form class="form-horizontal" name="workform" id="workform" method="post" role="form" action="topdetail/addworksucess" enctype="multipart/form-data">
                                     <div class="form-group"><label class="col-sm-2 control-label">项目题目:</label>
 
-                                        <div class="col-sm-10"><input type="text" class="form-control" value=""></div>
+                                        <div class="col-sm-10"><input type="text" name="worktitle" class="form-control" value=""></div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">上传者 :</label>
 
-                                        <div class="col-sm-10"><input type="text" class="form-control" value=""></div>
+                                        <div class="col-sm-10"><input type="text" name="workauthor" class="form-control" value=""></div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">获奖次数:</label>
 
-                                        <div class="col-sm-10"><input type="text" class="form-control" value=""></div>
-                                    </div>
-                                    <div class="form-group"><label class="col-sm-2 control-label">合作对象:</label>
-
-                                        <div class="col-sm-10"><input type="text" class="form-control" value=""></div>
+                                        <div class="col-sm-10"><input type="text" name="workreward" class="form-control" value=""></div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">项目图片:</label>
 
-                                        <div class="col-sm-10"><input type="text" class="form-control" value=""></div>
+                                        <div class="col-sm-10"><input type="file" name="image" class="form-control" value=""></div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">项目文件:</label>
 
-                                        <div class="col-sm-10"><input type="text" class="form-control" value=""></div>
+                                        <div class="col-sm-10"><input type="file" name="pdf" class="form-control" value=""></div>
                                     </div>
                                     <br>
                                         <div class="chat-message-form">
 
                                             <div class="form-group">
-                                                <textarea class="form-control message-input h-200" name="message" placeholder="添加描述..."></textarea>
+                                                <textarea class="form-control message-input h-200" name="worktext" placeholder="添加描述..."></textarea>
                                             </div>
 
                                         </div>
@@ -76,8 +72,8 @@
                             </div>
 
                             <div class="mail-body text-right tooltip-demo">
-                                <a href="homepage/index" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Discard email"><i class="fa fa-times"></i> 取 消</a>
-                                <a href="homepage/index" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="Move to draft folder"><i class="fa fa-pencil"></i> 上 传</a>
+                                <a href="homepage/index" class="btn btn-white btn-sm"><i class="fa fa-times"></i> 取 消</a>
+                                <button class="btn btn-primary btn-sm" onclick="document.workform.submit()"><i class="fa fa-pencil"></i> 上 传</button>
                             </div>
                             <div class="clearfix"></div>
                         </div>

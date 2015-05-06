@@ -13,7 +13,7 @@ class Mtopdetail extends MY_model
         $config = parent::select_DB("etc_privileges");
         $this->load->database($config);
 
-        $sql = "SELECT `id`,`title`,`vote`,`imgpath`,`pdfpath`,`author`,`uploadtime`,`tag`,`reward`,`lastupdate`
+        $sql = "SELECT `id`,`title`,`vote`,`imgpath`,`pdfpath`,`author`,`uploadtime`,`tag`,`reward`,`lastupdate`,`text`
                 FROM works
                 WHERE `id` = $id";
 
@@ -119,5 +119,32 @@ class Mtopdetail extends MY_model
             return false;
         }
         return true;
+    }
+
+    function insert_work($title, $author, $pdfpath, $imgpath, $reward, $text)
+    {
+        $config = parent::select_DB("etc_privileges");
+        $this->load->database($config);
+
+        $sql="INSERT INTO `works` (`title`, `uploadtime`, `author`, `pdfpath`, `imgpath`, `reward`, `lastupdate`, `text`) "
+            . "VALUES ('$title',  '". date("Y-m-d H:i:s") ."', '$author', '$pdfpath', '$imgpath', '$reward', '". date("Y-m-d H:i:s") ."', '$text')";
+        if(!($query = $this->db->query($sql)))
+        {
+            $this->db->_error_message();
+            return false;
+        }
+        return true;
+    }
+
+    function get_now_workid($username, $worktitle)
+    {
+        $config = parent::select_DB("etc_privileges");
+        $this->load->database($config);
+
+        $sql = "SELECT `id`
+                FROM `works`
+                WHERE `author` = '$username' AND `title` = '$worktitle'";
+
+        return $this->my_query("etc_privileges", $sql)->result_array();
     }
 }

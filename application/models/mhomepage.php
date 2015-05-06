@@ -33,7 +33,7 @@ class Mhomepage extends MY_model
         $config = parent::select_DB("etc_privileges");
         $this->load->database($config);
 
-        $sql = "SELECT `id`,`title`,`vote`,`imgpath`,`author`,`reward`
+        $sql = "SELECT `id`,`title`,`vote`,`imgpath`,`author`,`reward`,`pdfpath`,`text`
                 FROM works
                 ORDER BY `vote` DESC
                 LIMIT 8";
@@ -46,7 +46,7 @@ class Mhomepage extends MY_model
         $config = parent::select_DB("etc_privileges");
         $this->load->database($config);
 
-        $sql = "SELECT `id`,`title`,`uploadtime`
+        $sql = "SELECT `id`,`title`,`uploadtime`,`pdfpath`,`text`
                 FROM works
                 ORDER BY `uploadtime` DESC
                 LIMIT 5";
@@ -59,7 +59,7 @@ class Mhomepage extends MY_model
         $config = parent::select_DB("etc_privileges");
         $this->load->database($config);
 
-        $sql = "SELECT `id`,`title`,`uploadtime`
+        $sql = "SELECT `id`,`title`,`uploadtime`,`pdfpath`,`text`
                 FROM works
                 ORDER BY `reward` DESC
                 LIMIT 5";
