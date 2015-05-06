@@ -693,20 +693,8 @@
                         <div class="ibox">
                             <div class="ibox-title">
                                 <h5>所有帖子</h5>
-                                <div class="ibox-tools">
-                                    <a href="" class="btn btn-primary btn-xs">发表帖子</a>
-                                </div>
                             </div>
                             <div class="ibox-content">
-                                <div class="row m-b-sm m-t-sm">
-                                    <div class="col-md-1">
-                                        <button type="button" id="loading-example-btn" class="btn btn-white btn-sm" ><i class="fa fa-refresh"></i> Refresh</button>
-                                    </div>
-                                    <div class="col-md-11">
-                                        <div class="input-group"><input type="text" placeholder="搜索" class="input-sm form-control"> <span class="input-group-btn">
-                                        <button type="button" class="btn btn-sm btn-primary"> Go!</button> </span></div>
-                                    </div>
-                                </div>
 
                                 <div class="project-list">
 
@@ -738,12 +726,7 @@
                                         <div class="btn-group">
                                             <button class="btn btn-white" type="button"><i class="fa fa-chevron-left"></i></button>
                                             <button class="btn btn-white active">1</button>
-                                            <button class="btn btn-white">2</button>
-                                            <button class="btn btn-white">3</button>
-                                            <button class="btn btn-white">4</button>
-                                            <button class="btn btn-white">5</button>
-                                            <button class="btn btn-white">6</button>
-                                            <button class="btn btn-white">7</button>
+                                          
                                             <button class="btn btn-white" type="button"><i class="fa fa-chevron-right"></i> </button>
                                         </div>
                                     </div>
