@@ -40,6 +40,7 @@ class Topdetail extends CI_Controller
         }
     }
 
+    // 下载
     function download($path)
     {
         $fullpath = "./public/images/".$path;
@@ -61,7 +62,7 @@ class Topdetail extends CI_Controller
 
         $_POST['image'] = $this->imgUp();
         $_POST['pdf'] = $this->pdfUp();
-//        $_POST['workpdf'] = $this->fileUp();
+
         $worktitle = $this->input->post('worktitle', true);
         $workauthor = $this->input->post('workauthor', true);
         $workreward = $this->input->post('workreward', true);
@@ -72,13 +73,6 @@ class Topdetail extends CI_Controller
 
         $workidtemp = $this->mtopdetail->get_now_workid($username, $worktitle);
         $workid = $workidtemp[0]['id'];
-//        var_dump($workid);
-//        $note_img = 'a'.rand(1,8).'.jpg';
-//        $this->mtopdetail->add_note($notetitle, $notetext, $username, $note_img);
-
-//        $now_note_id = $this->mtopdetail->get_now_note_id($username);
-
-//        $data['now_note_id'] = $now_note_id[0]['id'];   // 记录刚插入的帖子id
 
         redirect('topdetail/index/'.$workid);
     }
